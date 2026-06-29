@@ -1,0 +1,237 @@
+{"kind":"deck","id":"pr/8b7yxi","name":"Deck"}
+{"kind":"layout","layoutId":"10dc2c28-296c-4245-9e82-127bbfcf7adf","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"04a6cdea-c54d-4357-a6e6-d04888c3f6b0","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/xfmxw5","slide":1,"title":"MANUAL","textShapes":3}
+{"kind":"shape","id":"sh/rmhk3q5o","slide":1,"bbox":[0,0,410,720]}
+{"kind":"shape","id":"sh/g7adsji5","slide":1,"bbox":[410,0,16,720]}
+{"kind":"textbox","id":"sh/9s36hcrm","slide":1,"text":"MANUAL\nDE MARCA","textPreview":"MANUAL | DE MARCA","textChars":15,"textLines":2,"bbox":[72,92,300,190]}
+{"kind":"textbox","id":"sh/yd0z6103","slide":1,"text":"Sistema de identidad visual","textPreview":"Sistema de identidad visual","textChars":27,"textLines":1,"bbox":[72,300,280,44]}
+{"kind":"textbox","id":"sh/rytsvu9k","slide":1,"text":"Versión 1.0 · 2026","textPreview":"Versión 1.0 · 2026","textChars":18,"textLines":1,"bbox":[72,622,260,24]}
+{"kind":"image","id":"im/54zidony","slide":1,"name":"","alt":"Logo NETICAR DESARROLLOS","bbox":[540,105,590,470]}
+{"kind":"notes","id":"nt/xfmxw5","slide":1,"text":""}
+{"kind":"slide","id":"sl/md216u","slide":2,"title":"01","textShapes":8}
+{"kind":"textbox","id":"sh/54zidony","slide":2,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[82,56,500,22]}
+{"kind":"textbox","id":"sh/udg7adsj","slide":2,"text":"Cómo usar este manual","textPreview":"Cómo usar este manual","textChars":21,"textLines":1,"bbox":[82,92,1040,65]}
+{"kind":"textbox","id":"sh/nyd0z610","slide":2,"text":"Una guía práctica para construir una presencia consistente.","textPreview":"Una guía práctica para construir una presencia consistente.","textChars":59,"textLines":1,"bbox":[82,164,1020,50]}
+{"kind":"textbox","id":"sh/cvixczed","slide":2,"text":"Este documento define los criterios esenciales para aplicar la identidad de NETICAR en medios digitales, impresos y audiovisuales.","textPreview":"Este documento define los criterios esenciales para aplicar la identidad de NETICAR en medios digitales, impresos y audiovisuales.","textChars":130,"textLines":1,"bbox":[72,245,500,130]}
+{"kind":"shape","id":"sh/5gbq1ory","slide":2,"bbox":[690,230,430,220]}
+{"kind":"textbox","id":"sh/upwb2hwf","slide":2,"text":"PRINCIPIO RECTOR","textPreview":"PRINCIPIO RECTOR","textChars":16,"textLines":1,"bbox":[730,270,330,22]}
+{"kind":"textbox","id":"sh/nap4r65w","slide":2,"text":"Consistencia antes que decoración.","textPreview":"Consistencia antes que decoración.","textChars":34,"textLines":1,"bbox":[730,315,330,75]}
+{"kind":"textbox","id":"sh/c7u54zid","slide":2,"text":"NETICAR · MANUAL DE MARCA","textPreview":"NETICAR · MANUAL DE MARCA","textChars":25,"textLines":1,"bbox":[72,672,420,20]}
+{"kind":"textbox","id":"sh/1orytsvu","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1170,672,38,20]}
+{"kind":"notes","id":"nt/md216u","slide":2,"text":""}
+{"kind":"slide","id":"sl/oh2xse","slide":3,"title":"02","textShapes":11}
+{"kind":"textbox","id":"sh/d0z61032","slide":3,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[82,56,500,22]}
+{"kind":"textbox","id":"sh/29gr2p8n","slide":3,"text":"Esencia de marca","textPreview":"Esencia de marca","textChars":16,"textLines":1,"bbox":[82,92,1040,65]}
+{"kind":"textbox","id":"sh/vu9knih4","slide":3,"text":"La identidad combina estructura técnica y energía creativa.","textPreview":"La identidad combina estructura técnica y energía creativa.","textChars":59,"textLines":1,"bbox":[82,164,1020,50]}
+{"kind":"shape","id":"sh/knih4byh","slide":3,"bbox":[72,255,350,250]}
+{"kind":"textbox","id":"sh/d8bat47y","slide":3,"text":"TECNOLOGÍA","textPreview":"TECNOLOGÍA","textChars":10,"textLines":1,"bbox":[102,292,290,26]}
+{"kind":"textbox","id":"sh/2lszqtcj","slide":3,"text":"Soluciones construidas con criterio.","textPreview":"Soluciones construidas con criterio.","textChars":36,"textLines":1,"bbox":[102,342,280,90]}
+{"kind":"shape","id":"sh/v6psfil0","slide":3,"bbox":[457,255,350,250]}
+{"kind":"textbox","id":"sh/kre1w7mp","slide":3,"text":"CONEXIÓN","textPreview":"CONEXIÓN","textChars":8,"textLines":1,"bbox":[487,292,290,26]}
+{"kind":"textbox","id":"sh/dcbulwva","slide":3,"text":"Personas, sistemas y oportunidades.","textPreview":"Personas, sistemas y oportunidades.","textChars":35,"textLines":1,"bbox":[487,342,280,90]}
+{"kind":"shape","id":"sh/lszqtcj6","slide":3,"bbox":[842,255,350,250]}
+{"kind":"textbox","id":"sh/s72x4nap","slide":3,"text":"EVOLUCIÓN","textPreview":"EVOLUCIÓN","textChars":9,"textLines":1,"bbox":[872,292,290,26]}
+{"kind":"textbox","id":"sh/3m94fu18","slide":3,"text":"Movimiento continuo hacia adelante.","textPreview":"Movimiento continuo hacia adelante.","textChars":35,"textLines":1,"bbox":[872,342,280,90]}
+{"kind":"textbox","id":"sh/a5gbq1or","slide":3,"text":"NETICAR · MANUAL DE MARCA","textPreview":"NETICAR · MANUAL DE MARCA","textChars":25,"textLines":1,"bbox":[72,672,420,20]}
+{"kind":"textbox","id":"sh/h4byhgn2","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1170,672,38,20]}
+{"kind":"notes","id":"nt/oh2xse","slide":3,"text":""}
+{"kind":"slide","id":"sl/k3v20j","slide":4,"title":"03","textShapes":15}
+{"kind":"textbox","id":"sh/6xkf6dcb","slide":4,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[82,56,500,22]}
+{"kind":"textbox","id":"sh/hk3q5o7q","slide":4,"text":"Personalidad de NETICAR","textPreview":"Personalidad de NETICAR","textChars":23,"textLines":1,"bbox":[82,92,1040,65]}
+{"kind":"textbox","id":"sh/oza1gvy9","slide":4,"text":"Cinco atributos orientan el tono y las decisiones visuales.","textPreview":"Cinco atributos orientan el tono y las decisiones visuales.","textChars":59,"textLines":1,"bbox":[82,164,1020,50]}
+{"kind":"textbox","id":"sh/zqtcj6to","slide":4,"text":"MODERNA","textPreview":"MODERNA","textChars":7,"textLines":1,"bbox":[92,235,560,42]}
+{"kind":"textbox","id":"sh/65wjudg7","slide":4,"text":"Actual, sin perseguir modas.","textPreview":"Actual, sin perseguir modas.","textChars":28,"textLines":1,"bbox":[620,240,500,34]}
+{"kind":"textbox","id":"sh/hwfyxobm","slide":4,"text":"CONFIABLE","textPreview":"CONFIABLE","textChars":9,"textLines":1,"bbox":[92,305,560,42]}
+{"kind":"textbox","id":"sh/obm58z25","slide":4,"text":"Precisa, clara y consistente.","textPreview":"Precisa, clara y consistente.","textChars":29,"textLines":1,"bbox":[620,310,500,34]}
+{"kind":"textbox","id":"sh/zupwb2hw","slide":4,"text":"DINÁMICA","textPreview":"DINÁMICA","textChars":8,"textLines":1,"bbox":[92,375,560,42]}
+{"kind":"textbox","id":"sh/a9w3m94f","slide":4,"text":"Activa, flexible y resolutiva.","textPreview":"Activa, flexible y resolutiva.","textChars":30,"textLines":1,"bbox":[620,380,500,34]}
+{"kind":"textbox","id":"sh/8bat47y1","slide":4,"text":"TÉCNICA","textPreview":"TÉCNICA","textChars":7,"textLines":1,"bbox":[92,445,560,42]}
+{"kind":"textbox","id":"sh/1w7mp0bi","slide":4,"text":"Sólida, comprensible y rigurosa.","textPreview":"Sólida, comprensible y rigurosa.","textChars":32,"textLines":1,"bbox":[620,450,500,34]}
+{"kind":"textbox","id":"sh/q5o7qpg3","slide":4,"text":"CERCANA","textPreview":"CERCANA","textChars":7,"textLines":1,"bbox":[92,515,560,42]}
+{"kind":"textbox","id":"sh/jqh0fepk","slide":4,"text":"Humana, directa y colaborativa.","textPreview":"Humana, directa y colaborativa.","textChars":31,"textLines":1,"bbox":[620,520,500,34]}
+{"kind":"textbox","id":"sh/8nqxs72x","slide":4,"text":"NETICAR · MANUAL DE MARCA","textPreview":"NETICAR · MANUAL DE MARCA","textChars":25,"textLines":1,"bbox":[72,672,420,20]}
+{"kind":"textbox","id":"sh/18jqh0fe","slide":4,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1170,672,38,20]}
+{"kind":"notes","id":"nt/k3v20j","slide":4,"text":""}
+{"kind":"slide","id":"sl/if49oz","slide":5,"title":"04","textShapes":11}
+{"kind":"textbox","id":"sh/dsji5sne","slide":5,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[82,56,500,22]}
+{"kind":"textbox","id":"sh/61032lsz","slide":5,"text":"Concepto del símbolo","textPreview":"Concepto del símbolo","textChars":20,"textLines":1,"bbox":[82,92,1040,65]}
+{"kind":"textbox","id":"sh/vmtwra5g","slide":5,"text":"Un monograma N que combina solidez, dirección y un punto de encuentro.","textPreview":"Un monograma N que combina solidez, dirección y un punto de encuentro.","textChars":70,"textLines":1,"bbox":[82,164,1020,50]}
+{"kind":"textbox","id":"sh/d4vmtwra","slide":5,"text":"PILARES","textPreview":"PILARES","textChars":7,"textLines":1,"bbox":[680,240,170,25]}
+{"kind":"textbox","id":"sh/6dcbulwv","slide":5,"text":"Estructura, estabilidad y confianza.","textPreview":"Estructura, estabilidad y confianza.","textChars":36,"textLines":1,"bbox":[680,275,430,42]}
+{"kind":"textbox","id":"sh/vy90je9c","slide":5,"text":"DIAGONAL","textPreview":"DIAGONAL","textChars":8,"textLines":1,"bbox":[680,360,170,25]}
+{"kind":"textbox","id":"sh/onyd0z61","slide":5,"text":"Avance, vínculo y transformación.","textPreview":"Avance, vínculo y transformación.","textChars":33,"textLines":1,"bbox":[680,395,430,42]}
+{"kind":"textbox","id":"sh/d8v6psfi","slide":5,"text":"PUNTO","textPreview":"PUNTO","textChars":5,"textLines":1,"bbox":[680,480,170,25]}
+{"kind":"textbox","id":"sh/twra5gbq","slide":5,"text":"Personas, foco y conexión.","textPreview":"Personas, foco y conexión.","textChars":26,"textLines":1,"bbox":[680,515,430,42]}
+{"kind":"textbox","id":"sh/4byhgn29","slide":5,"text":"NETICAR · MANUAL DE MARCA","textPreview":"NETICAR · MANUAL DE MARCA","textChars":25,"textLines":1,"bbox":[72,672,420,20]}
+{"kind":"textbox","id":"sh/bq1oryts","slide":5,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1170,672,38,20]}
+{"kind":"image","id":"im/p8nqxs72","slide":5,"name":"","alt":"Logo NETICAR DESARROLLOS","bbox":[80,230,500,360]}
+{"kind":"notes","id":"nt/if49oz","slide":5,"text":""}
+{"kind":"slide","id":"sl/0txrtw","slide":6,"title":"05","textShapes":6}
+{"kind":"textbox","id":"sh/3itgfmlk","slide":6,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[82,56,500,22]}
+{"kind":"textbox","id":"sh/w3m94fu1","slide":6,"text":"Firma principal","textPreview":"Firma principal","textChars":15,"textLines":1,"bbox":[82,92,1040,65]}
+{"kind":"textbox","id":"sh/loj2t83i","slide":6,"text":"Es la versión prioritaria para comunicaciones institucionales.","textPreview":"Es la versión prioritaria para comunicaciones institucionales.","textChars":62,"textLines":1,"bbox":[82,164,1020,50]}
+{"kind":"shape","id":"sh/e9cvixcz","slide":6,"bbox":[100,235,1080,330]}
+{"kind":"textbox","id":"sh/wb2hwfyx","slide":6,"text":"Mantener siempre la relación entre símbolo, nombre y descriptor.","textPreview":"Mantener siempre la relación entre símbolo, nombre y descriptor.","textChars":64,"textLines":1,"bbox":[305,590,670,28]}
+{"kind":"textbox","id":"sh/lwval87e","slide":6,"text":"NETICAR · MANUAL DE MARCA","textPreview":"NETICAR · MANUAL DE MARCA","textChars":25,"textLines":1,"bbox":[72,672,420,20]}
+{"kind":"textbox","id":"sh/ahoza1gv","slide":6,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1170,672,38,20]}
+{"kind":"image","id":"im/yhgn29gr","slide":6,"name":"","alt":"Logo NETICAR DESARROLLOS","bbox":[250,255,780,285]}
+{"kind":"notes","id":"nt/0txrtw","slide":6,"text":""}
+{"kind":"slide","id":"sl/rspcns","slide":7,"title":"06","textShapes":7}
+{"kind":"textbox","id":"sh/p8nqxs72","slide":7,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[82,56,500,22]}
+{"kind":"textbox","id":"sh/ih4byhgn","slide":7,"text":"Versiones de marca","textPreview":"Versiones de marca","textChars":18,"textLines":1,"bbox":[82,92,1040,65]}
+{"kind":"textbox","id":"sh/72x4nap4","slide":7,"text":"Elegir la versión según el espacio disponible y el nivel de reconocimiento.","textPreview":"Elegir la versión según el espacio disponible y el nivel de reconocimiento.","textChars":75,"textLines":1,"bbox":[82,164,1020,50]}
+{"kind":"shape","id":"sh/0z61032l","slide":7,"bbox":[72,235,540,300]}
+{"kind":"textbox","id":"sh/itgfmlkj","slide":7,"text":"FIRMA SOBRE FONDO CLARO","textPreview":"FIRMA SOBRE FONDO CLARO","textChars":23,"textLines":1,"bbox":[185,505,320,22]}
+{"kind":"shape","id":"sh/7ed8bat4","slide":7,"bbox":[652,235,556,300]}
+{"kind":"textbox","id":"sh/pwb2hwfy","slide":7,"text":"FIRMA SOBRE FONDO NEGRO","textPreview":"FIRMA SOBRE FONDO NEGRO","textChars":23,"textLines":1,"bbox":[760,505,340,22]}
+{"kind":"textbox","id":"sh/94fu18jq","slide":7,"text":"NETICAR · MANUAL DE MARCA","textPreview":"NETICAR · MANUAL DE MARCA","textChars":25,"textLines":1,"bbox":[72,672,420,20]}
+{"kind":"textbox","id":"sh/kjm1cfa9","slide":7,"text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[1170,672,38,20]}
+{"kind":"image","id":"im/cbulwval","slide":7,"name":"","alt":"Logo NETICAR DESARROLLOS","bbox":[130,270,420,220]}
+{"kind":"image","id":"im/5wjudg7a","slide":7,"name":"","alt":"Logo NETICAR para fondos negros","bbox":[765,270,330,220]}
+{"kind":"notes","id":"nt/rspcns","slide":7,"text":""}
+{"kind":"slide","id":"sl/p8dv9w","slide":8,"title":"07","textShapes":8}
+{"kind":"textbox","id":"sh/oza1gvy9","slide":8,"text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[82,56,500,22]}
+{"kind":"textbox","id":"sh/zed8v6ps","slide":8,"text":"Área de seguridad","textPreview":"Área de seguridad","textChars":17,"textLines":1,"bbox":[82,92,1040,65]}
+{"kind":"textbox","id":"sh/6xkf6dcb","slide":8,"text":"El aire protege la claridad y el protagonismo de la marca.","textPreview":"El aire protege la claridad y el protagonismo de la marca.","textChars":58,"textLines":1,"bbox":[82,164,1020,50]}
+{"kind":"shape","id":"sh/hwfyxobm","slide":8,"bbox":[220,225,840,350]}
+{"kind":"shape","id":"sh/obm58z25","slide":8,"bbox":[280,275,720,250]}
+{"kind":"textbox","id":"sh/65wjudg7","slide":8,"text":"X","textPreview":"X","textChars":1,"textLines":1,"bbox":[240,378,30,24]}
+{"kind":"textbox","id":"sh/h0fepkzu","slide":8,"text":"X","textPreview":"X","textChars":1,"textLines":1,"bbox":[1015,378,30,24]}
+{"kind":"textbox","id":"sh/sfil0rqd","slide":8,"text":"Usar como mínimo una unidad X equivalente al diámetro del punto del monograma.","textPreview":"Usar como mínimo una unidad X equivalente al diámetro del punto del monograma.","textChars":78,"textLines":1,"bbox":[310,595,660,32]}
+{"kind":"textbox","id":"sh/qtcj6tov","slide":8,"text":"NETICAR · MANUAL DE MARCA","textPreview":"NETICAR · MANUAL DE MARCA","textChars":25,"textLines":1,"bbox":[72,672,420,20]}
+{"kind":"textbox","id":"sh/je9cvixc","slide":8,"text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[1170,672,38,20]}
+{"kind":"image","id":"im/mlkjm1cf","slide":8,"name":"","alt":"Logo NETICAR DESARROLLOS","bbox":[400,290,480,220]}
+{"kind":"notes","id":"nt/p8dv9w","slide":8,"text":""}
+{"kind":"slide","id":"sl/wbjtce","slide":9,"title":"08","textShapes":15}
+{"kind":"textbox","id":"sh/3m94fu18","slide":9,"text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[82,56,500,22]}
+{"kind":"textbox","id":"sh/s72x4nap","slide":9,"text":"Tamaños mínimos","textPreview":"Tamaños mínimos","textChars":15,"textLines":1,"bbox":[82,92,1040,65]}
+{"kind":"textbox","id":"sh/lszqtcj6","slide":9,"text":"La legibilidad define el límite; nunca la conveniencia.","textPreview":"La legibilidad define el límite; nunca la conveniencia.","textChars":55,"textLines":1,"bbox":[82,164,1020,50]}
+{"kind":"shape","id":"sh/adsji5sn","slide":9,"bbox":[72,250,350,235]}
+{"kind":"textbox","id":"sh/3ylc7u54","slide":9,"text":"DIGITAL","textPreview":"DIGITAL","textChars":7,"textLines":1,"bbox":[102,280,290,22]}
+{"kind":"textbox","id":"sh/sji5snel","slide":9,"text":"Firma completa","textPreview":"Firma completa","textChars":14,"textLines":1,"bbox":[102,330,290,32]}
+{"kind":"textbox","id":"sh/h4byhgn2","slide":9,"text":"160 px","textPreview":"160 px","textChars":6,"textLines":1,"bbox":[102,395,290,48]}
+{"kind":"shape","id":"sh/ap4r65wj","slide":9,"bbox":[462,250,350,235]}
+{"kind":"textbox","id":"sh/za1gvy90","slide":9,"text":"IMPRESIÓN","textPreview":"IMPRESIÓN","textChars":9,"textLines":1,"bbox":[492,280,290,22]}
+{"kind":"textbox","id":"sh/z61032ls","slide":9,"text":"Firma completa","textPreview":"Firma completa","textChars":14,"textLines":1,"bbox":[492,330,290,32]}
+{"kind":"textbox","id":"sh/al87ed8b","slide":9,"text":"35 mm","textPreview":"35 mm","textChars":5,"textLines":1,"bbox":[492,395,290,48]}
+{"kind":"shape","id":"sh/hcrmhk3q","slide":9,"bbox":[852,250,350,235]}
+{"kind":"textbox","id":"sh/orytsvu9","slide":9,"text":"AVATAR","textPreview":"AVATAR","textChars":6,"textLines":1,"bbox":[882,280,290,22]}
+{"kind":"textbox","id":"sh/zupwb2hw","slide":9,"text":"Isotipo","textPreview":"Isotipo","textChars":7,"textLines":1,"bbox":[882,330,290,32]}
+{"kind":"textbox","id":"sh/a9w3m94f","slide":9,"text":"32 px","textPreview":"32 px","textChars":5,"textLines":1,"bbox":[882,395,290,48]}
+{"kind":"textbox","id":"sh/h0fepkzu","slide":9,"text":"Si “DESARROLLOS” pierde legibilidad, utilizar una versión sin descriptor.","textPreview":"Si “DESARROLLOS” pierde legibilidad, utilizar una versión sin descriptor.","textChars":73,"textLines":1,"bbox":[72,555,850,30]}
+{"kind":"textbox","id":"sh/sfil0rqd","slide":9,"text":"NETICAR · MANUAL DE MARCA","textPreview":"NETICAR · MANUAL DE MARCA","textChars":25,"textLines":1,"bbox":[72,672,420,20]}
+{"kind":"textbox","id":"sh/zqtcj6to","slide":9,"text":"09","textPreview":"09","textChars":2,"textLines":1,"bbox":[1170,672,38,20]}
+{"kind":"notes","id":"nt/wbjtce","slide":9,"text":""}
+{"kind":"slide","id":"sl/gybj4l","slide":10,"title":"09","textShapes":13}
+{"kind":"textbox","id":"sh/i5sneloj","slide":10,"text":"09","textPreview":"09","textChars":2,"textLines":1,"bbox":[82,56,500,22]}
+{"kind":"textbox","id":"sh/pwb2hwfy","slide":10,"text":"Paleta cromática","textPreview":"Paleta cromática","textChars":16,"textLines":1,"bbox":[82,92,1040,65]}
+{"kind":"textbox","id":"sh/0bi9s36h","slide":10,"text":"Una base nítida con energía violeta y alto contraste.","textPreview":"Una base nítida con energía violeta y alto contraste.","textChars":53,"textLines":1,"bbox":[82,164,1020,50]}
+{"kind":"shape","id":"sh/7y1kre1w","slide":10,"bbox":[72,235,250,270]}
+{"kind":"textbox","id":"sh/ed8v6psf","slide":10,"text":"VIOLETA PROFUNDO","textPreview":"VIOLETA PROFUNDO","textChars":16,"textLines":1,"bbox":[92,535,220,24]}
+{"kind":"textbox","id":"sh/p4r65wju","slide":10,"text":"HEX  #6500C8\nRGB  101 · 0 · 200","textPreview":"HEX  #6500C8 | RGB  101 · 0 · 200","textChars":31,"textLines":2,"bbox":[92,570,220,50]}
+{"kind":"shape","id":"sh/wjudg7ad","slide":10,"bbox":[357,235,250,270]}
+{"kind":"textbox","id":"sh/72x4nap4","slide":10,"text":"VIOLETA NETICAR","textPreview":"VIOLETA NETICAR","textChars":15,"textLines":1,"bbox":[377,535,220,24]}
+{"kind":"textbox","id":"sh/ih4byhgn","slide":10,"text":"HEX  #8A00D6\nRGB  138 · 0 · 214","textPreview":"HEX  #8A00D6 | RGB  138 · 0 · 214","textChars":31,"textLines":2,"bbox":[377,570,220,50]}
+{"kind":"shape","id":"sh/032lszqt","slide":10,"bbox":[642,235,250,270]}
+{"kind":"textbox","id":"sh/tovahoza","slide":10,"text":"VIOLETA LUZ","textPreview":"VIOLETA LUZ","textChars":11,"textLines":1,"bbox":[662,535,220,24]}
+{"kind":"textbox","id":"sh/ixczed8v","slide":10,"text":"HEX  #A929E8\nRGB  169 · 41 · 232","textPreview":"HEX  #A929E8 | RGB  169 · 41 · 232","textChars":32,"textLines":2,"bbox":[662,570,220,50]}
+{"kind":"shape","id":"sh/bi9s36hc","slide":10,"bbox":[927,235,250,270]}
+{"kind":"textbox","id":"sh/0fepkzup","slide":10,"text":"NEGRO","textPreview":"NEGRO","textChars":5,"textLines":1,"bbox":[947,535,220,24]}
+{"kind":"textbox","id":"sh/p0bi9s36","slide":10,"text":"HEX  #08080C\nRGB  8 · 8 · 12","textPreview":"HEX  #08080C | RGB  8 · 8 · 12","textChars":28,"textLines":2,"bbox":[947,570,220,50]}
+{"kind":"textbox","id":"sh/i9s36hcr","slide":10,"text":"NETICAR · MANUAL DE MARCA","textPreview":"NETICAR · MANUAL DE MARCA","textChars":25,"textLines":1,"bbox":[72,672,420,20]}
+{"kind":"textbox","id":"sh/bulwval8","slide":10,"text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1170,672,38,20]}
+{"kind":"notes","id":"nt/gybj4l","slide":10,"text":""}
+{"kind":"slide","id":"sl/ze0k1k","slide":11,"title":"10","textShapes":9}
+{"kind":"textbox","id":"sh/y90je9cv","slide":11,"text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[82,56,500,22]}
+{"kind":"textbox","id":"sh/5wjudg7a","slide":11,"text":"Gradiente de marca","textPreview":"Gradiente de marca","textChars":18,"textLines":1,"bbox":[82,92,1040,65]}
+{"kind":"textbox","id":"sh/gbq1oryt","slide":11,"text":"La transición tonal aporta profundidad sin perder precisión.","textPreview":"La transición tonal aporta profundidad sin perder precisión.","textChars":60,"textLines":1,"bbox":[82,164,1020,50]}
+{"kind":"shape","id":"sh/n29gr2p8","slide":11,"bbox":[120,275,210,150]}
+{"kind":"shape","id":"sh/yhgn29gr","slide":11,"bbox":[328,275,210,150]}
+{"kind":"shape","id":"sh/58z25kb6","slide":11,"bbox":[536,275,210,150]}
+{"kind":"shape","id":"sh/gn29gr2p","slide":11,"bbox":[744,275,210,150]}
+{"kind":"shape","id":"sh/neloj2t8","slide":11,"bbox":[952,275,210,150]}
+{"kind":"textbox","id":"sh/ytsvu9kn","slide":11,"text":"0%","textPreview":"0%","textChars":2,"textLines":1,"bbox":[115,445,80,22]}
+{"kind":"textbox","id":"sh/83itgfml","slide":11,"text":"50%","textPreview":"50%","textChars":3,"textLines":1,"bbox":[600,445,80,22]}
+{"kind":"textbox","id":"sh/xobm58z2","slide":11,"text":"100%","textPreview":"100%","textChars":4,"textLines":1,"bbox":[1080,445,80,22]}
+{"kind":"textbox","id":"sh/qxs72x4n","slide":11,"text":"Dirección recomendada: violeta profundo → violeta luminoso. Mantener el negro puro para NETICAR y gris espaciado para DESARROLLOS.","textPreview":"Dirección recomendada: violeta profundo → violeta luminoso. Mantener el negro puro para NETICAR y gris espaciado para DESARROLLOS.","textChars":130,"textLines":1,"bbox":[220,520,840,65]}
+{"kind":"textbox","id":"sh/fil0rqd4","slide":11,"text":"NETICAR · MANUAL DE MARCA","textPreview":"NETICAR · MANUAL DE MARCA","textChars":25,"textLines":1,"bbox":[72,672,420,20]}
+{"kind":"textbox","id":"sh/4fu18jqh","slide":11,"text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[1170,672,38,20]}
+{"kind":"notes","id":"nt/ze0k1k","slide":11,"text":""}
+{"kind":"slide","id":"sl/rgzqoc","slide":12,"title":"11","textShapes":12}
+{"kind":"textbox","id":"sh/ed8bat47","slide":12,"text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[82,56,500,22]}
+{"kind":"textbox","id":"sh/l0rqd4vm","slide":12,"text":"Sistema tipográfico","textPreview":"Sistema tipográfico","textChars":19,"textLines":1,"bbox":[82,92,1040,65]}
+{"kind":"textbox","id":"sh/wfyxobm5","slide":12,"text":"Una voz geométrica para títulos y una sans serif legible para lectura.","textPreview":"Una voz geométrica para títulos y una sans serif legible para lectura.","textChars":70,"textLines":1,"bbox":[82,164,1020,50]}
+{"kind":"textbox","id":"sh/36hcrmhk","slide":12,"text":"MONTSERRAT","textPreview":"MONTSERRAT","textChars":10,"textLines":1,"bbox":[72,245,520,60]}
+{"kind":"textbox","id":"sh/eloj2t83","slide":12,"text":"Títulos · señalización · llamados","textPreview":"Títulos · señalización · llamados","textChars":33,"textLines":1,"bbox":[72,315,520,30]}
+{"kind":"textbox","id":"sh/lc7u54zi","slide":12,"text":"ABCDEFGHIJKLMNOPQRSTUVWXYZ\n0123456789","textPreview":"ABCDEFGHIJKLMNOPQRSTUVWXYZ | 0123456789","textChars":37,"textLines":2,"bbox":[72,375,520,80]}
+{"kind":"textbox","id":"sh/wra5gbq1","slide":12,"text":"OPEN SANS","textPreview":"OPEN SANS","textChars":9,"textLines":1,"bbox":[680,245,500,60]}
+{"kind":"textbox","id":"sh/7adsji5s","slide":12,"text":"Textos · interfaces · documentos","textPreview":"Textos · interfaces · documentos","textChars":32,"textLines":1,"bbox":[680,315,500,30]}
+{"kind":"textbox","id":"sh/epkzupwb","slide":12,"text":"La claridad sostiene cada interacción y convierte la complejidad en una experiencia simple.","textPreview":"La claridad sostiene cada interacción y convierte la complejidad en una experiencia simple.","textChars":91,"textLines":1,"bbox":[680,375,440,90]}
+{"kind":"textbox","id":"sh/8jqh0fep","slide":12,"text":"Alternativas Canva: League Spartan para títulos; Arial o Canva Sans para cuerpo.","textPreview":"Alternativas Canva: League Spartan para títulos; Arial o Canva Sans para cuerpo.","textChars":80,"textLines":1,"bbox":[72,555,900,30]}
+{"kind":"textbox","id":"sh/x4nap4r6","slide":12,"text":"NETICAR · MANUAL DE MARCA","textPreview":"NETICAR · MANUAL DE MARCA","textChars":25,"textLines":1,"bbox":[72,672,420,20]}
+{"kind":"textbox","id":"sh/qd4vmtwr","slide":12,"text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[1170,672,38,20]}
+{"kind":"notes","id":"nt/rgzqoc","slide":12,"text":""}
+{"kind":"slide","id":"sl/2dvht2","slide":13,"title":"12","textShapes":8}
+{"kind":"textbox","id":"sh/0rqd4vmt","slide":13,"text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[82,56,500,22]}
+{"kind":"textbox","id":"sh/b6xkf6dc","slide":13,"text":"Usos correctos","textPreview":"Usos correctos","textChars":14,"textLines":1,"bbox":[82,92,1040,65]}
+{"kind":"textbox","id":"sh/il0rqd4v","slide":13,"text":"Contraste, proporción y respiración son innegociables.","textPreview":"Contraste, proporción y respiración son innegociables.","textChars":54,"textLines":1,"bbox":[82,164,1020,50]}
+{"kind":"shape","id":"sh/t47y1kre","slide":13,"bbox":[72,250,350,250]}
+{"kind":"textbox","id":"sh/byhgn29g","slide":13,"text":"FONDO BLANCO","textPreview":"FONDO BLANCO","textChars":12,"textLines":1,"bbox":[102,470,290,22]}
+{"kind":"shape","id":"sh/idonyd0z","slide":13,"bbox":[462,250,350,250]}
+{"kind":"textbox","id":"sh/0fepkzup","slide":13,"text":"FONDO NEGRO","textPreview":"FONDO NEGRO","textChars":11,"textLines":1,"bbox":[492,470,290,22]}
+{"kind":"shape","id":"sh/itgfmlkj","slide":13,"bbox":[852,250,350,250]}
+{"kind":"textbox","id":"sh/0z61032l","slide":13,"text":"ESCALA PROPORCIONAL","textPreview":"ESCALA PROPORCIONAL","textChars":19,"textLines":1,"bbox":[882,470,290,22]}
+{"kind":"textbox","id":"sh/pkzupwb2","slide":13,"text":"NETICAR · MANUAL DE MARCA","textPreview":"NETICAR · MANUAL DE MARCA","textChars":25,"textLines":1,"bbox":[72,672,420,20]}
+{"kind":"textbox","id":"sh/ih4byhgn","slide":13,"text":"13","textPreview":"13","textChars":2,"textLines":1,"bbox":[1170,672,38,20]}
+{"kind":"image","id":"im/x4nap4r6","slide":13,"name":"","alt":"Logo NETICAR DESARROLLOS","bbox":[112,275,270,175]}
+{"kind":"image","id":"im/87ed8bat","slide":13,"name":"","alt":"Logo NETICAR para fondos negros","bbox":[502,275,270,175]}
+{"kind":"image","id":"im/4zidonyd","slide":13,"name":"","alt":"Logo NETICAR DESARROLLOS","bbox":[892,275,270,175]}
+{"kind":"notes","id":"nt/2dvht2","slide":13,"text":""}
+{"kind":"slide","id":"sl/6cxi5i","slide":14,"title":"13","textShapes":17}
+{"kind":"textbox","id":"sh/kb6xkf6d","slide":14,"text":"13","textPreview":"13","textChars":2,"textLines":1,"bbox":[82,56,500,22]}
+{"kind":"textbox","id":"sh/rqd4vmtw","slide":14,"text":"Usos incorrectos","textPreview":"Usos incorrectos","textChars":16,"textLines":1,"bbox":[82,92,1040,65]}
+{"kind":"textbox","id":"sh/25kb6xkf","slide":14,"text":"No alterar aquello que hace reconocible al sistema.","textPreview":"No alterar aquello que hace reconocible al sistema.","textChars":51,"textLines":1,"bbox":[82,164,1020,50]}
+{"kind":"shape","id":"sh/9knih4by","slide":14,"bbox":[72,230,350,130]}
+{"kind":"textbox","id":"sh/kzupwb2h","slide":14,"text":"×","textPreview":"×","textChars":1,"textLines":1,"bbox":[95,260,48,48]}
+{"kind":"textbox","id":"sh/re1w7mp0","slide":14,"text":"NO DEFORMAR","textPreview":"NO DEFORMAR","textChars":11,"textLines":1,"bbox":[155,270,235,35]}
+{"kind":"shape","id":"sh/2t83itgf","slide":14,"bbox":[457,230,350,130]}
+{"kind":"textbox","id":"sh/9gr2p8nq","slide":14,"text":"×","textPreview":"×","textChars":1,"textLines":1,"bbox":[480,260,48,48]}
+{"kind":"textbox","id":"sh/gvy90je9","slide":14,"text":"NO ROTAR","textPreview":"NO ROTAR","textChars":8,"textLines":1,"bbox":[540,270,235,35]}
+{"kind":"shape","id":"sh/yd0z6103","slide":14,"bbox":[842,230,350,130]}
+{"kind":"textbox","id":"sh/rytsvu9k","slide":14,"text":"×","textPreview":"×","textChars":1,"textLines":1,"bbox":[865,260,48,48]}
+{"kind":"textbox","id":"sh/gfmlkjm1","slide":14,"text":"NO CAMBIAR COLORES","textPreview":"NO CAMBIAR COLORES","textChars":18,"textLines":1,"bbox":[925,270,235,35]}
+{"kind":"shape","id":"sh/90je9cvi","slide":14,"bbox":[72,395,350,130]}
+{"kind":"textbox","id":"sh/y1kre1w7","slide":14,"text":"×","textPreview":"×","textChars":1,"textLines":1,"bbox":[95,425,48,48]}
+{"kind":"textbox","id":"sh/rmhk3q5o","slide":14,"text":"NO AÑADIR EFECTOS","textPreview":"NO AÑADIR EFECTOS","textChars":17,"textLines":1,"bbox":[155,435,235,35]}
+{"kind":"shape","id":"sh/g7adsji5","slide":14,"bbox":[457,395,350,130]}
+{"kind":"textbox","id":"sh/9s36hcrm","slide":14,"text":"×","textPreview":"×","textChars":1,"textLines":1,"bbox":[480,425,48,48]}
+{"kind":"textbox","id":"sh/yxobm58z","slide":14,"text":"NO INVADIR EL ÁREA","textPreview":"NO INVADIR EL ÁREA","textChars":18,"textLines":1,"bbox":[540,435,235,35]}
+{"kind":"shape","id":"sh/nih4byhg","slide":14,"bbox":[842,395,350,130]}
+{"kind":"textbox","id":"sh/3m94fu18","slide":14,"text":"×","textPreview":"×","textChars":1,"textLines":1,"bbox":[865,425,48,48]}
+{"kind":"textbox","id":"sh/a5gbq1or","slide":14,"text":"NO USAR SIN CONTRASTE","textPreview":"NO USAR SIN CONTRASTE","textChars":21,"textLines":1,"bbox":[925,435,235,35]}
+{"kind":"textbox","id":"sh/lszqtcj6","slide":14,"text":"NETICAR · MANUAL DE MARCA","textPreview":"NETICAR · MANUAL DE MARCA","textChars":25,"textLines":1,"bbox":[72,672,420,20]}
+{"kind":"textbox","id":"sh/s72x4nap","slide":14,"text":"14","textPreview":"14","textChars":2,"textLines":1,"bbox":[1170,672,38,20]}
+{"kind":"notes","id":"nt/6cxi5i","slide":14,"text":""}
+{"kind":"slide","id":"sl/3yxhc7","slide":15,"title":"14","textShapes":11}
+{"kind":"textbox","id":"sh/oj2t83it","slide":15,"text":"14","textPreview":"14","textChars":2,"textLines":1,"bbox":[82,56,500,22]}
+{"kind":"textbox","id":"sh/vy90je9c","slide":15,"text":"Lenguaje gráfico y aplicaciones","textPreview":"Lenguaje gráfico y aplicaciones","textChars":31,"textLines":1,"bbox":[82,92,1040,65]}
+{"kind":"textbox","id":"sh/6dcbulwv","slide":15,"text":"Pilares, diagonales y puntos amplían el universo del monograma N.","textPreview":"Pilares, diagonales y puntos amplían el universo del monograma N.","textChars":65,"textLines":1,"bbox":[82,164,1020,50]}
+{"kind":"shape","id":"sh/dsji5sne","slide":15,"bbox":[72,235,350,340]}
+{"kind":"textbox","id":"sh/o7qpg3ex","slide":15,"text":"SOCIAL","textPreview":"SOCIAL","textChars":6,"textLines":1,"bbox":[102,275,280,25]}
+{"kind":"textbox","id":"sh/vmtwra5g","slide":15,"text":"Contenido digital\ncon alto contraste.","textPreview":"Contenido digital | con alto contraste.","textChars":37,"textLines":2,"bbox":[102,330,260,90]}
+{"kind":"shape","id":"sh/61032lsz","slide":15,"bbox":[462,235,350,340]}
+{"kind":"textbox","id":"sh/dg7adsji","slide":15,"text":"PAPELERÍA","textPreview":"PAPELERÍA","textChars":9,"textLines":1,"bbox":[492,275,280,25]}
+{"kind":"textbox","id":"sh/ovahoza1","slide":15,"text":"Composición limpia\ny precisa.","textPreview":"Composición limpia | y precisa.","textChars":29,"textLines":2,"bbox":[492,330,260,90]}
+{"kind":"shape","id":"sh/mtwra5gb","slide":15,"bbox":[852,235,356,340]}
+{"kind":"textbox","id":"sh/fepkzupw","slide":15,"text":"PRODUCTO","textPreview":"PRODUCTO","textChars":8,"textLines":1,"bbox":[882,275,280,25]}
+{"kind":"textbox","id":"sh/4zidonyd","slide":15,"text":"Interfaces claras\ncon acentos vivos.","textPreview":"Interfaces claras | con acentos vivos.","textChars":36,"textLines":2,"bbox":[882,330,270,90]}
+{"kind":"textbox","id":"sh/xkf6dcbu","slide":15,"text":"NETICAR · MANUAL DE MARCA","textPreview":"NETICAR · MANUAL DE MARCA","textChars":25,"textLines":1,"bbox":[72,672,420,20]}
+{"kind":"textbox","id":"sh/mlkjm1cf","slide":15,"text":"15","textPreview":"15","textChars":2,"textLines":1,"bbox":[1170,672,38,20]}
+{"kind":"notes","id":"nt/3yxhc7","slide":15,"text":""}
+{"kind":"slide","id":"sl/p763bj","slide":16,"title":"UNA MARCA","textShapes":3}
+{"kind":"textbox","id":"sh/rytsvu9k","slide":16,"text":"UNA MARCA\nEN MOVIMIENTO.","textPreview":"UNA MARCA | EN MOVIMIENTO.","textChars":24,"textLines":2,"bbox":[72,120,650,150]}
+{"kind":"textbox","id":"sh/yd0z6103","slide":16,"text":"NETICAR construye soluciones mediante conexiones claras, estructuras sólidas y una energía visual que siempre avanza.","textPreview":"NETICAR construye soluciones mediante conexiones claras, estructuras sólidas y una energía visual que siempre avanza.","textChars":117,"textLines":1,"bbox":[72,330,630,110]}
+{"kind":"textbox","id":"sh/9s36hcrm","slide":16,"text":"Manual de marca · Versión 1.1 · Junio 2026","textPreview":"Manual de marca · Versión 1.1 · Junio 2026","textChars":42,"textLines":1,"bbox":[72,620,600,24]}
+{"kind":"image","id":"im/dg7adsji","slide":16,"name":"","alt":"Logo NETICAR para fondos negros","bbox":[820,100,330,280]}
+{"kind":"notes","id":"nt/p763bj","slide":16,"text":""}
