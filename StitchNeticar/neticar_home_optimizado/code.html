@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Neticar - Innovación en Desarrollo</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&amp;family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-container": "#1f1f24",
+                        "on-secondary": "#430089",
+                        "on-background": "#e4e1e8",
+                        "on-surface-variant": "#d1c1d7",
+                        "surface-tint": "#e2b5ff",
+                        "secondary-fixed": "#ecdcff",
+                        "on-primary-fixed-variant": "#6e00ab",
+                        "on-error": "#690005",
+                        "error-container": "#93000a",
+                        "primary-fixed-dim": "#e2b5ff",
+                        "background": "#131317",
+                        "on-primary": "#4d007a",
+                        "surface-container-low": "#1b1b20",
+                        "inverse-on-surface": "#303035",
+                        "on-secondary-fixed-variant": "#6000bf",
+                        "primary-fixed": "#f3daff",
+                        "surface-container-highest": "#353439",
+                        "tertiary": "#e8b3ff",
+                        "outline-variant": "#4e4354",
+                        "secondary-container": "#6603c9",
+                        "text-gray": "#666170",
+                        "surface-variant": "#353439",
+                        "on-tertiary-container": "#eec3ff",
+                        "surface-container-high": "#2a292e",
+                        "on-primary-fixed": "#2f004d",
+                        "on-surface": "#e4e1e8",
+                        "inverse-primary": "#8f10da",
+                        "secondary-fixed-dim": "#d6baff",
+                        "surface-bright": "#39393e",
+                        "on-tertiary-fixed": "#310049",
+                        "primary": "#e2b5ff",
+                        "primary-container": "#8a00d6",
+                        "surface": "#131317",
+                        "surface-container-lowest": "#0e0e12",
+                        "on-tertiary": "#500074",
+                        "tertiary-fixed": "#f6d9ff",
+                        "lavender-mist": "#F5EEFC",
+                        "on-error-container": "#ffdad6",
+                        "tertiary-fixed-dim": "#e8b3ff",
+                        "on-secondary-fixed": "#280056",
+                        "outline": "#9a8ca0",
+                        "secondary": "#d6baff",
+                        "on-secondary-container": "#ceadff",
+                        "surface-dim": "#131317",
+                        "tertiary-container": "#9000cc",
+                        "on-primary-container": "#e9c5ff",
+                        "on-tertiary-fixed-variant": "#7200a3",
+                        "pure-white": "#FFFFFF",
+                        "inverse-surface": "#e4e1e8",
+                        "error": "#ffb4ab"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    spacing: {
+                        "base": "8px",
+                        "container-max": "1280px",
+                        "md": "24px",
+                        "xs": "4px",
+                        "gutter": "24px",
+                        "sm": "12px",
+                        "lg": "48px",
+                        "xl": "80px"
+                    },
+                    fontFamily: {
+                        "headline-lg-mobile": ["Montserrat"],
+                        "headline-md": ["Montserrat"],
+                        "body-lg": ["Open Sans"],
+                        "headline-lg": ["Montserrat"],
+                        "label-caps": ["Open Sans"],
+                        "headline-xl": ["Montserrat"],
+                        "subtitle": ["Open Sans"],
+                        "body-md": ["Open Sans"],
+                        "headline-md-mobile": ["Montserrat"]
+                    },
+                    fontSize: {
+                        "headline-lg-mobile": ["32px", { lineHeight: "1.2", fontWeight: "700" }],
+                        "headline-md": ["32px", { lineHeight: "1.3", fontWeight: "700" }],
+                        "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
+                        "headline-lg": ["44px", { lineHeight: "1.2", fontWeight: "700" }],
+                        "label-caps": ["14px", { lineHeight: "1", letterSpacing: "0.1em", fontWeight: "700" }],
+                        "headline-xl": ["64px", { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "800" }],
+                        "subtitle": ["22px", { lineHeight: "1.5", fontWeight: "600" }],
+                        "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
+                        "headline-md-mobile": ["24px", { lineHeight: "1.3", fontWeight: "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { background-color: #08080C; color: #e4e1e8; }
+        .glass-panel {
+            background: rgba(31, 31, 36, 0.6);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #6500C8, #A929E8);
+            color: #FFFFFF;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            box-shadow: 0 0 20px rgba(138, 0, 214, 0.5);
+            transform: translateY(-2px);
+        }
+        .btn-secondary {
+            background: rgba(138, 0, 214, 0.1);
+            border: 1px solid #8A00D6;
+            color: #e2b5ff;
+            backdrop-filter: blur(12px);
+            transition: all 0.3s ease;
+        }
+        .btn-secondary:hover {
+            background: rgba(138, 0, 214, 0.2);
+            box-shadow: 0 0 15px rgba(138, 0, 214, 0.3);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #e2b5ff, #8A00D6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .fade-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        #hero-canvas {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="font-body-md antialiased overflow-x-hidden selection:bg-primary-container selection:text-white">
+<!-- Top Navigation -->
+<nav class="bg-surface/60 dark:bg-surface/60 backdrop-blur-lg fixed top-0 w-full z-50 border-b border-white/10 shadow-[0_0_20px_rgba(138,0,214,0.15)] transition-all duration-300 ease-in-out">
+<div class="flex justify-between items-center px-gutter py-4 max-w-container-max mx-auto">
+<a class="font-headline-md text-headline-md font-bold text-primary flex items-center gap-2 hover:text-primary transition-colors duration-300" href="#">
+<img alt="Neticar Logo" class="h-8 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoLajDIyT_P8yd3CSSOkloVfWcds0lM4qPKuYJRuPGGJbd4zX0nNtL5r2Ueisq5toQnh1QORiu8wROCMygMWlFr-sC4Ex0Zk8XhzKFzJWNm3d9RMkcAfoLLt5hZ1L8oTTHrzub3s7tE0PVuQCz_WJfXpFvZAZABN76Vq0yH9vk7IIR5lVXSNDqRxjRPmRJM7zTblWmUqXuIfNeEP1dLKtZucGQXw_JwKYPIuC_tLslKnFcP_KGKCJUy8JOKlysxyLdHIMyJnYDiAs"/>
+<span class="sr-only">Neticar</span>
+</a>
+<div class="hidden md:flex items-center gap-md">
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-caps text-label-caps" href="#proyectos">Proyectos</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-caps text-label-caps" href="#nosotros">Nosotros</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-caps text-label-caps" href="#contacto">Contacto</a>
+</div>
+<div class="flex items-center gap-4">
+<a class="btn-primary px-6 py-2 rounded-full font-label-caps text-label-caps" href="#contacto">Comenzar</a>
+</div>
+</div>
+</nav>
+<!-- Main Content -->
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+<!-- Optimised Shader Background -->
+<div class="absolute inset-0 z-0 opacity-80">
+<canvas id="hero-canvas"></canvas>
+</div>
+<div class="relative z-10 text-center px-gutter max-w-container-max mx-auto fade-up visible">
+<img alt="Neticar Icon" class="h-24 w-auto mx-auto mb-8 drop-shadow-[0_0_30px_rgba(138,0,214,0.6)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8Za12Kmhs8fRIKf9u6jwiBYJRoobMnAIKvPcFVcBms7LY_JWtG8P0Usq5vzeUV95XurLJZKUi_CyDGJ65DM1T6VGZcE3YD11PO1VXGQp6Io3ZskZuWfFAcpp43cA6_iyinSzZ4AdmBD62TMiMeQZN1CbUI5j9dKDXiBuaU_7pmPcxiX4vNlNTFI9W5xg6iPCFqpnFpoWiKH5DtyVqaKz9_ddaQMUhwtFSjNMoR2IzkH9Na3MTus9mdHbpgm1tGoxa4x8nxX5mWU8"/>
+<h1 class="font-headline-xl text-headline-xl md:text-[80px] font-extrabold text-white mb-6 leading-tight">Nuestros <br/> <span class="text-gradient">Proyectos Digitales</span></h1>
+<p class="font-subtitle text-subtitle text-on-surface-variant max-w-2xl mx-auto mb-10">Un espacio donde compartimos lo que podemos crear juntos. Explorando tecnología y diseño en equipo.</p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<a class="btn-primary px-8 py-4 rounded-full font-label-caps text-label-caps w-full sm:w-auto text-center" href="#proyectos">Explorar</a>
+<a class="btn-secondary px-8 py-4 rounded-full font-label-caps text-label-caps w-full sm:w-auto text-center" href="#contacto">Escribinos</a>
+</div>
+</div>
+<!-- Scroll Indicator -->
+<div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce z-10">
+<span class="material-symbols-outlined text-primary text-3xl">keyboard_arrow_down</span>
+</div>
+</section>
+<!-- Projects Section -->
+<section class="py-xl px-gutter relative" id="proyectos">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16 fade-up visible">
+<h2 class="font-headline-lg text-headline-lg text-white mb-4">Vista previa de <span class="text-primary">Proyectos</span></h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Explora nuestro portafolio de soluciones digitales de alto impacto.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Project Card 1 -->
+<div class="glass-panel rounded-xl overflow-hidden group fade-up relative visible">
+<div class="absolute inset-0 bg-gradient-to-b from-transparent to-[#08080C] opacity-80 z-10"></div>
+<img alt="Dashboard interface" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnMUjcUMaFYFGw5IShGEb6AK8scg2MAy_uS1Y2QGPwI2GGiZGdc5VTGdxR_D00N_e9uSMCRFm0DTOuUxXe3JsKe0feZf-jCKBI5yA4aMlTIdasIMjfyJZp51PcYvyk-5xIE0ZqXC2FLf4Av-wj_V4LQ44wXu54NN-PqvD39uUSVFL1iJCMlc2v3DUM-vXCInNyXahqQYx3GzbQ1K6TTDLBsjyO2vxNgk8N82vRQoWnVWsyi851pjx4h1P62Dfae9Y8Ha6ZndVtxIg"/>
+<div class="absolute bottom-0 left-0 w-full p-6 z-20">
+<span class="bg-primary-container text-white text-xs font-bold px-3 py-1 rounded-full mb-3 inline-block uppercase tracking-wider">Fintech</span>
+<h3 class="font-subtitle text-subtitle text-white mb-2">Plataforma Nexus</h3>
+<a class="text-primary hover:text-tertiary flex items-center gap-2 font-label-caps text-label-caps transition-colors" href="#">
+                                Ver más <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="glass-panel rounded-xl overflow-hidden group fade-up relative visible" style="transition-delay: 100ms;">
+<div class="absolute inset-0 bg-gradient-to-b from-transparent to-[#08080C] opacity-80 z-10"></div>
+<img alt="E-commerce mobile app" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZLSBEzLVvclsGWd2wy-GxgYty5Y7SNa104XOD0rwXrc2Ce3bHO-PN2eLlNca9eDM-8dQDlJmEVVCCdzbWj6RDoTnx-p1628TQscAejxOIFhk56yi0j84bXPG5libOXcV6w6CoGB8KdNj5fkSqoAyubI4iQagQmqF720WYdpuQNYl_JBsEIEGOmY16Jgo3ALXtW7YvbxInSvby-7x57Ie7E_AXDzed0okzqT9k39weBtaQeWKiUjzVHe5g1e8yBT9L2upsb2Xelog"/>
+<div class="absolute bottom-0 left-0 w-full p-6 z-20">
+<span class="bg-secondary-container text-white text-xs font-bold px-3 py-1 rounded-full mb-3 inline-block uppercase tracking-wider">E-Commerce</span>
+<h3 class="font-subtitle text-subtitle text-white mb-2">Nova Store App</h3>
+<a class="text-primary hover:text-tertiary flex items-center gap-2 font-label-caps text-label-caps transition-colors" href="#">
+                                Ver más <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Project Card 3 -->
+<div class="glass-panel rounded-xl overflow-hidden group fade-up relative visible" style="transition-delay: 200ms;">
+<div class="absolute inset-0 bg-gradient-to-b from-transparent to-[#08080C] opacity-80 z-10"></div>
+<img alt="Smart city control center" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgJY1U-VBDeATV0VpGl9TTmeFoufDerZjyovnlqALVEs7TIjPgqw2yS96CFXRab15FZxuNRkxE_yk1M6RPjMAj30cmhEZurb6bbQs3Al6swGZSQ-lZAcGlCJfu_CshdI8EP-8pq__sLBvjaGFZcF934W3fMbR2bNZ7BaCvwLTE2LrnnFdvO2S_tyVyVFKQHw0Q1faG25azOhPmCGovNtFkKOBHW2bkUm3KYEvOYoLtSKlX2zekVC-kqXitzqB4X7ntFoOIkpGN0os"/>
+<div class="absolute bottom-0 left-0 w-full p-6 z-20">
+<span class="bg-primary/20 text-primary border border-primary text-xs font-bold px-3 py-1 rounded-full mb-3 inline-block uppercase tracking-wider">Smart City</span>
+<h3 class="font-subtitle text-subtitle text-white mb-2">Sistema Órbita</h3>
+<a class="text-primary hover:text-tertiary flex items-center gap-2 font-label-caps text-label-caps transition-colors" href="#">
+                                Ver más <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Team Section -->
+<section class="py-xl px-gutter relative bg-surface-container-low" id="nosotros">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16 fade-up visible">
+<h2 class="font-headline-lg text-headline-lg text-white mb-4">El <span class="text-primary">Equipo</span></h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Las mentes detrás de la innovación.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+<!-- Team Member 1 -->
+<div class="glass-panel rounded-2xl p-8 flex flex-col items-center text-center fade-up relative overflow-hidden group visible">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full blur-3xl -mr-10 -mt-10"></div>
+<div class="w-32 h-32 rounded-full overflow-hidden border-2 border-primary p-1 mb-6 relative">
+<img alt="Alex Rivera" class="w-full h-full object-cover rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLP-filXVREqHqDBZnurzihFDiKb0JwpyF34XVG7sGrdIqUujeIv2CvqLgrvQjA5QsPyAlRnpEnpjJNbtUlwC7lIVJJLv_TtTuaLMTqa7irvhkoylRg3bc8Sar7XmN3AudFcTSk_Mu8J6b5eXU-1q-dgSpm5oTMC-qYslabMwTzaXV0nT7ZpRbxI009-floOYiMyTNzEK9rPGYeGiC9FCRXtJbaz-7-HkJljJbKtp5yoE5BRlhpjb0xHeQgTjkYY98vZQXFaJa2xs"/>
+</div>
+<h3 class="font-headline-md text-headline-md text-white mb-1">Alex Rivera</h3>
+<p class="text-primary font-label-caps text-label-caps mb-4">CEO &amp; Lead Dev</p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Arquitecto de soluciones con más de 10 años impulsando startups hacia el futuro digital.</p>
+<div class="flex gap-4 mt-auto">
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-bright transition-all" href="#">
+<span class="material-symbols-outlined">code</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-bright transition-all" href="#">
+<span class="material-symbols-outlined">mail</span>
+</a>
+</div>
+</div>
+<!-- Team Member 2 -->
+<div class="glass-panel rounded-2xl p-8 flex flex-col items-center text-center fade-up relative overflow-hidden group visible" style="transition-delay: 100ms;">
+<div class="absolute bottom-0 left-0 w-32 h-32 bg-secondary/10 rounded-full blur-3xl -ml-10 -mb-10"></div>
+<div class="w-32 h-32 rounded-full overflow-hidden border-2 border-primary p-1 mb-6 relative">
+<img alt="Sam Taylor" class="w-full h-full object-cover rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsHXFpQETUsc_rCVI0DrHTKn0mChgXXHwXVxszneDGqsVcvkohEzfJHVj19V6PL8AToo_3mHJ83crkWtriDFVVc8viBf_1l_mPjFPeBZZ37qAbGosszaLGRG4cNnr0QrVDswJ2j22vbC4-qhSgxLIK1AfgJqqLAsID75VKPgbnqknbxLZbE-b01D5iRse5kvhJqe7n8y_eJ2dkaoMyLgy9KufgklKV6SInvOYuT1YNe5HBYaYGjDZw3KtYF2pCGNxnd1OK0FUAi24"/>
+</div>
+<h3 class="font-headline-md text-headline-md text-white mb-1">Sam Taylor</h3>
+<p class="text-primary font-label-caps text-label-caps mb-4">CTO &amp; Fullstack</p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Especialista en arquitecturas descentralizadas y optimización de rendimiento extremo.</p>
+<div class="flex gap-4 mt-auto">
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-bright transition-all" href="#">
+<span class="material-symbols-outlined">terminal</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-bright transition-all" href="#">
+<span class="material-symbols-outlined">mail</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-xl px-gutter relative" id="contacto">
+<div class="max-w-container-max mx-auto">
+<div class="max-w-2xl mx-auto text-center fade-up">
+<h2 class="font-headline-lg text-headline-lg text-white mb-6">¡Hablemos!</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10">¿Tenés alguna duda o simplemente querés charlar sobre algún proyecto? Mandanos un mensaje.</p>
+<div class="flex justify-center">
+<a class="btn-primary px-10 py-4 rounded-full font-label-caps text-label-caps flex items-center gap-3" href="https://wa.me/543412639357" target="_blank">
+<span class="material-symbols-outlined">chat</span>
+            Enviar mensaje por WhatsApp
+        </a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest w-full py-lg">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md px-gutter max-w-container-max mx-auto items-center">
+<div class="flex items-center">
+<a class="font-headline-md-mobile text-headline-md-mobile font-bold text-primary opacity-80 hover:opacity-100 transition-opacity" href="#">
+<img alt="Neticar Logo" class="h-6 w-auto inline-block mr-2 grayscale hover:grayscale-0 transition-all" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8Za12Kmhs8fRIKf9u6jwiBYJRoobMnAIKvPcFVcBms7LY_JWtG8P0Usq5vzeUV95XurLJZKUi_CyDGJ65DM1T6VGZcE3YD11PO1VXGQp6Io3ZskZuWfFAcpp43cA6_iyinSzZ4AdmBD62TMiMeQZN1CbUI5j9dKDXiBuaU_7pmPcxiX4vNlNTFI9W5xg6iPCFqpnFpoWiKH5DtyVqaKz9_ddaQMUhwtFSjNMoR2IzkH9Na3MTus9mdHbpgm1tGoxa4x8nxX5mWU8"/>
+                    Neticar
+                </a>
+</div>
+<div class="text-center md:text-left">
+<p class="font-body-md text-body-md text-primary">© 2024 Neticar. Todos los derechos reservados.</p>
+</div>
+<div class="flex flex-wrap justify-center md:justify-end gap-6">
+<a class="text-text-gray font-label-caps text-label-caps hover:text-tertiary transition-colors opacity-80 hover:opacity-100" href="#">LinkedIn</a>
+<a class="text-text-gray font-label-caps text-label-caps hover:text-tertiary transition-colors opacity-80 hover:opacity-100" href="#">Twitter</a>
+<a class="text-text-gray font-label-caps text-label-caps hover:text-tertiary transition-colors opacity-80 hover:opacity-100" href="#">Privacidad</a>
+<a class="text-text-gray font-label-caps text-label-caps hover:text-tertiary transition-colors opacity-80 hover:opacity-100" href="#">Términos</a>
+</div>
+</div>
+</footer>
+<!-- Optimized WebGL Shader Engine -->
+<script>
+    const vertexShaderSource = `
+        attribute vec2 position;
+        void main() {
+            gl_Position = vec4(position, 0.0, 1.0);
+        }
+    `;
+
+    const fragmentShaderSource = `
+        precision highp float;
+        uniform float u_time;
+        uniform vec2 u_resolution;
+
+        void main() {
+            vec2 uv = gl_FragCoord.xy / u_resolution.xy;
+            uv = uv * 2.0 - 1.0;
+            uv.x *= u_resolution.x / u_resolution.y;
+
+            float wave = sin(uv.x * 1.5 + u_time * 0.5) * 0.3;
+            float wave2 = cos(uv.x * 2.0 - u_time * 0.3) * 0.2;
+            float flow = abs(0.1 / (uv.y + wave + wave2));
+            
+            vec3 color = vec3(0.5, 0.0, 0.8) * flow;
+            color += vec3(0.3, 0.1, 0.6) * (flow * 0.5);
+            
+            gl_FragColor = vec4(color, 1.0);
+        }
+    `;
+
+    function createShader(gl, type, source) {
+        const shader = gl.createShader(type);
+        gl.shaderSource(shader, source);
+        gl.compileShader(shader);
+        if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
+            console.error(gl.getShaderInfoLog(shader));
+            gl.deleteShader(shader);
+            return null;
+        }
+        return shader;
+    }
+
+    function initWebGL() {
+        const canvas = document.getElementById('hero-canvas');
+        const gl = canvas.getContext('webgl', { antialias: true, preserveDrawingBuffer: true });
+        if (!gl) return;
+
+        const vs = createShader(gl, gl.VERTEX_SHADER, vertexShaderSource);
+        const fs = createShader(gl, gl.FRAGMENT_SHADER, fragmentShaderSource);
+        const program = gl.createProgram();
+        gl.attachShader(program, vs);
+        gl.attachShader(program, fs);
+        gl.linkProgram(program);
+        gl.useProgram(program);
+
+        const positionBuffer = gl.createBuffer();
+        gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
+        gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 1, -1, -1, 1, -1, 1, 1, -1, 1, 1]), gl.STATIC_DRAW);
+
+        const positionLoc = gl.getAttribLocation(program, 'position');
+        gl.enableVertexAttribArray(positionLoc);
+        gl.vertexAttribPointer(positionLoc, 2, gl.FLOAT, false, 0, 0);
+
+        const timeLoc = gl.getUniformLocation(program, 'u_time');
+        const resLoc = gl.getUniformLocation(program, 'u_resolution');
+
+        function resize() {
+            const displayWidth = canvas.clientWidth;
+            const displayHeight = canvas.clientHeight;
+            if (canvas.width !== displayWidth || canvas.height !== displayHeight) {
+                canvas.width = displayWidth;
+                canvas.height = displayHeight;
+                gl.viewport(0, 0, canvas.width, canvas.height);
+            }
+        }
+
+        function render(time) {
+            resize();
+            gl.uniform1f(timeLoc, time * 0.001);
+            gl.uniform2f(resLoc, canvas.width, canvas.height);
+            gl.drawArrays(gl.TRIANGLES, 0, 6);
+            requestAnimationFrame(render);
+        }
+        requestAnimationFrame(render);
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+        initWebGL();
+
+        // Intersection Observer for Scroll Animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px"
+        });
+
+        document.querySelectorAll(".fade-up").forEach((el) => {
+            observer.observe(el);
+        });
+    });
+</script>
+</body></html>
