@@ -16,7 +16,7 @@ export function Navigation() {
     <header className="site-header">
       <nav className="nav-shell" aria-label="Navegación principal">
         <a className="brand" href="#inicio" aria-label="Neticar, volver al inicio">
-          <Image src="/images/logo-header.png" alt="Neticar" width={500} height={500} priority />
+          <Image src="/images/neticar-mark.png" alt="Neticar" width={500} height={500} priority />
         </a>
 
         <div className="desktop-nav">

@@ -3,15 +3,15 @@ import { Reveal } from "./Reveal";
 
 const members = [
   {
-    name: "Alex Rivera",
-    role: "CEO & Lead Dev",
-    bio: "Arquitecto de soluciones con más de 10 años impulsando startups hacia el futuro digital.",
+    name: "Tomás Colombo",
+    role: "Desarrollador Full Stack & IA",
+    bio: "Desarrollador full stack con dos años de experiencia profesional y en proyectos propios. Actualmente cursa el último año de la Tecnicatura Universitaria en Inteligencia Artificial de la UNR en Rosario, combinando desarrollo de software con soluciones inteligentes.",
     image: "/images/alex-rivera.png",
   },
   {
-    name: "Sam Taylor",
-    role: "CTO & Fullstack",
-    bio: "Especialista en arquitecturas descentralizadas y optimización de rendimiento extremo.",
+    name: "Avril Katerina Iocco",
+    role: "Diseñadora Visual",
+    bio: "Diseñadora con dos años de experiencia creando proyectos propios, enfocada en desarrollar identidades y experiencias visuales atractivas, claras y funcionales.",
     image: "/images/sam-taylor.png",
   },
 ];
@@ -22,7 +22,7 @@ export function Team() {
       <div className="container narrow">
         <Reveal className="section-heading">
           <h2>El <span>Equipo</span></h2>
-          <p>Las mentes detrás de la innovación.</p>
+          <p>Talento técnico y creatividad visual trabajando en conjunto.</p>
         </Reveal>
         <div className="team-grid">
           {members.map((member, index) => (

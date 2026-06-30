@@ -37,8 +37,8 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--primary); outli
   box-shadow: 0 0 20px rgba(138,0,214,.15);
 }
 .nav-shell { width: min(100% - 48px, var(--container)); height: 72px; margin: auto; display: flex; align-items: center; justify-content: space-between; position: relative; }
-.brand { display: flex; width: 40px; height: 40px; overflow: hidden; align-items: center; justify-content: center; }
-.brand img { width: 40px; height: 40px; object-fit: contain; }
+.brand { display: flex; width: 72px; height: 54px; overflow: hidden; align-items: center; justify-content: center; }
+.brand img { width: 64px; height: 64px; object-fit: contain; transform: scale(2.35); }
 .desktop-nav { position: absolute; left: 50%; transform: translateX(-50%); display: flex; gap: 28px; }
 .desktop-nav a, .mobile-menu a { color: var(--muted); font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; transition: color .25s; }
 .desktop-nav a:hover, .mobile-menu a:hover { color: var(--primary); }
@@ -55,7 +55,11 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--primary); outli
 .hero-canvas.no-webgl { background: radial-gradient(ellipse at center, #4b006e, #08080c 72%); }
 .hero-shade { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(8,8,12,.08), rgba(8,8,12,.28)); pointer-events: none; }
 .hero-content { position: relative; z-index: 2; text-align: center; width: min(100%, 900px); animation: enter .8s ease-out both; }
-.hero-logo { width: 96px; height: 96px; object-fit: contain; margin: 0 auto 30px; filter: drop-shadow(0 0 30px rgba(138,0,214,.6)); }
+.hero-brand { margin: -16px auto 24px; }
+.hero-logo { display: block; width: 520px; height: 520px; object-fit: contain; margin: 0 auto; transform: scale(1.6); filter: drop-shadow(0 0 30px rgba(138,0,214,.6)); }
+.hero-wordmark { position: relative; margin-top: -140px; color: white; font-family: var(--font-montserrat), Arial, sans-serif; line-height: 1; text-shadow: 0 0 24px rgba(8,8,12,.75); }
+.hero-wordmark span { display: block; font-size: 40px; font-weight: 800; letter-spacing: .035em; }
+.hero-wordmark small { display: block; margin-top: 9px; font-family: var(--font-open-sans), Arial, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: .42em; padding-left: .42em; }
 .hero h1, .section-heading h2, .contact h2 { font-family: var(--font-montserrat), Arial, sans-serif; }
 .hero h1 { margin: 0 0 24px; color: white; font-size: clamp(3rem, 7vw, 5rem); line-height: 1.08; font-weight: 800; letter-spacing: -.03em; }
 .hero h1 span, .section-heading h2 span { color: transparent; background: linear-gradient(135deg, #e2b5ff, var(--violet)); background-clip: text; }
@@ -108,6 +112,17 @@ footer { padding: 42px 0; background: #0e0e12; }
   .team-grid { gap: 24px; }
 }
 
+@media (max-height: 800px) and (min-width: 768px) {
+  .hero { padding-top: 84px; padding-bottom: 46px; }
+  .hero-brand { margin-top: -24px; margin-bottom: 18px; }
+  .hero-logo { width: 360px; height: 360px; transform: scale(1.5); }
+  .hero-wordmark { margin-top: -94px; }
+  .hero-wordmark span { font-size: 34px; }
+  .hero-wordmark small { font-size: 9px; }
+  .hero h1 { font-size: 64px; margin-bottom: 16px; }
+  .hero p { margin-bottom: 22px; }
+}
+
 @media (max-width: 767px) {
   .container, .nav-shell { width: min(100% - 32px, var(--container)); }
   .nav-shell { height: 66px; }
@@ -118,7 +133,13 @@ footer { padding: 42px 0; background: #0e0e12; }
   .mobile-menu.is-open { visibility: visible; opacity: 1; transform: none; }
   .mobile-menu a { padding: 12px; border-radius: 8px; }
   .hero { min-height: 100svh; padding-top: 100px; }
-  .hero-logo { width: 78px; height: 78px; margin-bottom: 24px; }
+  .brand { width: 62px; height: 50px; }
+  .brand img { width: 56px; height: 56px; }
+  .hero-brand { margin: -8px auto 24px; }
+  .hero-logo { width: 300px; height: 300px; transform: scale(1.5); }
+  .hero-wordmark { margin-top: -76px; }
+  .hero-wordmark span { font-size: 28px; }
+  .hero-wordmark small { margin-top: 7px; font-size: 8px; }
   .hero h1 { font-size: clamp(2.6rem, 12vw, 4rem); }
   .section { padding: 76px 0; }
   .section-heading { margin-bottom: 38px; }
