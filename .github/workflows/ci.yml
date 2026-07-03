@@ -49,6 +49,10 @@ jobs:
              git fetch origin main && \
              git reset --hard '${{ github.sha }}' && \
              cd ../KazaBackend && \
-             docker compose --env-file .env -f docker-compose.prod.yml build neticar && \
-             docker compose --env-file .env -f docker-compose.prod.yml up -d neticar edge && \
-             docker image prune -f"
+             if docker compose --env-file .env -f docker-compose.prod.yml config --services | grep -qx neticar; then \
+               docker compose --env-file .env -f docker-compose.prod.yml build neticar && \
+               docker compose --env-file .env -f docker-compose.prod.yml up -d neticar edge && \
+               docker image prune -f; \
+             else \
+               echo 'Neticar queda listo; el primer arranque lo realizará el despliegue de infraestructura'; \
+             fi"
