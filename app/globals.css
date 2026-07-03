@@ -72,8 +72,8 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--primary); outli
 .section-heading { text-align: center; margin-bottom: 52px; }
 .section-heading h2, .contact h2 { color: white; font-size: clamp(2rem, 4vw, 2.75rem); line-height: 1.2; margin: 0 0 14px; font-weight: 700; }
 .section-heading p, .contact p { color: var(--muted); font-size: 17px; line-height: 1.65; margin: 0; }
-.project-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
-.project-card { position: relative; height: 270px; overflow: hidden; border-radius: 12px; border: 1px solid rgba(255,255,255,.12); background: var(--surface-card); backdrop-filter: blur(16px); }
+.project-grid { display: flex; gap: 28px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: thin; scrollbar-color: var(--violet) rgba(255,255,255,.08); padding: 2px 2px 18px; }
+.project-card { position: relative; flex: 0 0 calc((100% - 56px) / 3); min-width: 0; height: 270px; scroll-snap-align: start; overflow: hidden; border-radius: 12px; border: 1px solid rgba(255,255,255,.12); background: var(--surface-card); backdrop-filter: blur(16px); }
 .project-card img { object-fit: cover; transition: transform .5s; }
 .project-card:hover img { transform: scale(1.05); }
 .card-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, transparent 18%, rgba(8,8,12,.94)); }
@@ -108,7 +108,7 @@ footer { padding: 42px 0; background: #0e0e12; }
 
 @media (max-width: 900px) {
   .project-grid { gap: 18px; }
-  .project-card { height: 240px; }
+  .project-card { flex-basis: calc((100% - 18px) / 2); height: 240px; }
   .team-grid { gap: 24px; }
 }
 
@@ -143,8 +143,8 @@ footer { padding: 42px 0; background: #0e0e12; }
   .hero h1 { font-size: clamp(2.6rem, 12vw, 4rem); }
   .section { padding: 76px 0; }
   .section-heading { margin-bottom: 38px; }
-  .project-grid, .team-grid { grid-template-columns: 1fr; }
-  .project-card { height: 280px; }
+  .team-grid { grid-template-columns: 1fr; }
+  .project-card { flex-basis: 86%; height: 280px; }
   .team-card { min-height: 360px; }
   .footer-inner { flex-direction: column; gap: 20px; text-align: center; }
 }
