@@ -6,3 +6,12 @@ out/
 *.tsbuildinfo
 .env*
 !.env.example
+
+# Design / source artifacts (must live under design/ or public/)
+*.png
+!public/**/*.png
+!design/**/*.png
+*.pptx
+!design/**/*.pptx
+*.ndjson
+!design/**/*.ndjson

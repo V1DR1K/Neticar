@@ -2,7 +2,7 @@
 .github
 .next
 node_modules
-StitchNeticar
+design
 *.log
 *.pptx
 *.ndjson

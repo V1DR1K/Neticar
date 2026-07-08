@@ -6,13 +6,13 @@ const members = [
     name: "Tomás Colombo",
     role: "Desarrollador Full Stack & IA",
     bio: "Desarrollador full stack con dos años de experiencia profesional y en proyectos propios. Actualmente cursa el último año de la Tecnicatura Universitaria en Inteligencia Artificial de la UNR en Rosario, combinando desarrollo de software con soluciones inteligentes.",
-    image: "/images/alex-rivera.png",
+    image: "/images/tomas-colombo.png",
   },
   {
     name: "Avril Katerina Iocco",
     role: "Diseñadora Visual",
     bio: "Diseñadora con dos años de experiencia creando proyectos propios, enfocada en desarrollar identidades y experiencias visuales atractivas, claras y funcionales.",
-    image: "/images/sam-taylor.png",
+    image: "/images/avril-iocco.png",
   },
 ];
 
