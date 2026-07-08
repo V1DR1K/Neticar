@@ -4,6 +4,7 @@ import { Reveal } from "./Reveal";
 const projects = [
   { title: "Kaza", category: "PropTech", image: "/images/project-kaza.png" },
   { title: "KazaFitness", category: "HealthTech", image: "/images/project-kazafitness.png" },
+  { title: "ServiCerca", category: "Servicios", image: "/images/project-servicerca.png" },
   { title: "HGFull", category: "Servicios", image: "/images/project-hgfull.png" },
   { title: "Chiquitines", category: "E-Commerce", image: "/images/project-chiquitines.png" },
 ];
