@@ -154,6 +154,38 @@
             width: 100%;
             height: 100%;
         }
+        .project-showcase { display: grid; gap: 32px; }
+        .project-showcase > .group { display: none; }
+        .project-item { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(260px, .7fr); min-height: 440px; }
+        .project-gallery { position: relative; overflow: hidden; background: #0e0e12; }
+        .project-slides { height: 100%; position: relative; }
+        .project-slide { position: absolute; inset: 0; opacity: 0; transform: scale(1.025); transition: opacity .45s ease, transform .6s ease; }
+        .project-slide.active { opacity: 1; transform: scale(1); }
+        .project-slide img { width: 100%; height: 100%; object-fit: cover; }
+        .project-slide[data-view="mobile"] img { object-position: 50% 20%; transform: scale(1.2); }
+        .project-slide[data-view="detail"] img { object-position: 50% 65%; transform: scale(1.18); }
+        .gallery-controls { position: absolute; inset: 50% 18px auto; display: flex; justify-content: space-between; transform: translateY(-50%); z-index: 4; pointer-events: none; }
+        .gallery-arrow { pointer-events: auto; width: 44px; height: 44px; border-radius: 999px; color: white; background: rgba(8,8,12,.72); border: 1px solid rgba(255,255,255,.2); backdrop-filter: blur(10px); }
+        .gallery-arrow:hover { background: #8a00d6; }
+        .gallery-dots { position: absolute; bottom: 20px; left: 20px; z-index: 5; display: flex; gap: 8px; }
+        .gallery-dot { width: 9px; height: 9px; padding: 0; border-radius: 50%; background: rgba(255,255,255,.4); border: 0; transition: all .25s ease; }
+        .gallery-dot.active { width: 28px; border-radius: 10px; background: #e2b5ff; }
+        .project-info { padding: 40px; display: flex; flex-direction: column; justify-content: center; }
+        .project-number { color: #9a8ca0; font-size: 13px; letter-spacing: .16em; margin-bottom: 24px; }
+        .project-info h3 { font: 700 32px/1.2 Montserrat, sans-serif; color: white; margin: 16px 0; }
+        .project-info p { color: #d1c1d7; line-height: 1.7; }
+        .screen-label { color: #e2b5ff; font-weight: 700; font-size: 13px; margin-top: 24px; }
+        .single-profile { max-width: 720px; margin: 0 auto; }
+        .single-profile .team-card-inner { display: grid; grid-template-columns: 220px 1fr; align-items: center; gap: 36px; text-align: left; }
+        .profile-portrait { width: 220px; aspect-ratio: 1; overflow: hidden; border-radius: 24px; border: 1px solid rgba(226,181,255,.45); box-shadow: 0 20px 70px rgba(138,0,214,.22); }
+        .profile-portrait img { width: 100%; height: 100%; object-fit: cover; }
+        @media (max-width: 800px) {
+            .project-item { grid-template-columns: 1fr; min-height: 0; }
+            .project-gallery { min-height: 330px; }
+            .project-info { padding: 28px; }
+            .single-profile .team-card-inner { grid-template-columns: 1fr; text-align: center; }
+            .profile-portrait { width: 180px; margin: 0 auto; }
+        }
     </style>
 </head>
 <body class="font-body-md antialiased overflow-x-hidden selection:bg-primary-container selection:text-white">
@@ -203,7 +235,11 @@
 <h2 class="font-headline-lg text-headline-lg text-white mb-4">Vista previa de <span class="text-primary">Proyectos</span></h2>
 <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Explora nuestro portafolio de soluciones digitales de alto impacto.</p>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="project-showcase">
+<article class="project-item glass-panel rounded-xl overflow-hidden fade-up" data-project-carousel data-title="Kaza" data-image="assets/projects/project-kaza.png"><div class="project-gallery"></div><div class="project-info"><span class="project-number">01 / 04</span><span class="bg-primary-container text-white text-xs font-bold px-3 py-1 rounded-full self-start uppercase tracking-wider">PropTech</span><h3>Kaza</h3><p>Plataforma inmobiliaria enfocada en una búsqueda clara, visual y rápida.</p><span class="screen-label" aria-live="polite"></span></div></article>
+<article class="project-item glass-panel rounded-xl overflow-hidden fade-up" data-project-carousel data-title="KazaFitness" data-image="assets/projects/project-kazafitness.png"><div class="project-gallery"></div><div class="project-info"><span class="project-number">02 / 04</span><span class="bg-secondary-container text-white text-xs font-bold px-3 py-1 rounded-full self-start uppercase tracking-wider">HealthTech</span><h3>KazaFitness</h3><p>Experiencia digital para entrenamiento, comunidad y hábitos saludables.</p><span class="screen-label" aria-live="polite"></span></div></article>
+<article class="project-item glass-panel rounded-xl overflow-hidden fade-up" data-project-carousel data-title="HGFull" data-image="assets/projects/project-hgfull.png"><div class="project-gallery"></div><div class="project-info"><span class="project-number">03 / 04</span><span class="bg-primary/20 text-primary border border-primary text-xs font-bold px-3 py-1 rounded-full self-start uppercase tracking-wider">Servicios</span><h3>HGFull</h3><p>Sitio comercial que organiza una oferta amplia y facilita el contacto.</p><span class="screen-label" aria-live="polite"></span></div></article>
+<article class="project-item glass-panel rounded-xl overflow-hidden fade-up" data-project-carousel data-title="Chiquitines" data-image="assets/projects/project-chiquitines.png"><div class="project-gallery"></div><div class="project-info"><span class="project-number">04 / 04</span><span class="bg-secondary-container text-white text-xs font-bold px-3 py-1 rounded-full self-start uppercase tracking-wider">E-Commerce</span><h3>Chiquitines</h3><p>Tienda online cálida y accesible, pensada para explorar productos fácilmente.</p><span class="screen-label" aria-live="polite"></span></div></article>
 <!-- Project Card 1 -->
 <div class="glass-panel rounded-xl overflow-hidden group fade-up relative visible">
 <div class="absolute inset-0 bg-gradient-to-b from-transparent to-[#08080C] opacity-80 z-10"></div>
@@ -250,7 +286,14 @@
 <h2 class="font-headline-lg text-headline-lg text-white mb-4">El <span class="text-primary">Equipo</span></h2>
 <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Las mentes detrás de la innovación.</p>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+<div class="single-profile">
+<div class="glass-panel rounded-2xl p-8 fade-up relative overflow-hidden visible">
+<div class="absolute top-0 right-0 w-40 h-40 bg-primary/10 rounded-full blur-3xl"></div>
+<div class="team-card-inner relative">
+<div class="profile-portrait"><img alt="Retrato profesional de Tomás Colombo" src="assets/tomas-colombo-profesional-v2.png"/></div>
+<div><p class="text-primary font-label-caps text-label-caps mb-3">Desarrollador Full Stack &amp; IA</p><h3 class="font-headline-md text-headline-md text-white mb-4">Tomás Colombo</h3><p class="font-body-md text-body-md text-on-surface-variant">Desarrollador full stack con experiencia profesional y en proyectos propios. Cursa el último año de la Tecnicatura Universitaria en Inteligencia Artificial de la UNR, combinando desarrollo de software con soluciones inteligentes.</p></div>
+</div></div></div>
+<div class="hidden">
 <!-- Team Member 1 -->
 <div class="glass-panel rounded-2xl p-8 flex flex-col items-center text-center fade-up relative overflow-hidden group visible">
 <div class="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full blur-3xl -mr-10 -mt-10"></div>
@@ -414,6 +457,35 @@
 
     document.addEventListener("DOMContentLoaded", () => {
         initWebGL();
+
+        document.querySelectorAll('[data-project-carousel]').forEach((carousel) => {
+            const gallery = carousel.querySelector('.project-gallery');
+            const title = carousel.dataset.title;
+            const src = carousel.dataset.image;
+            const views = [
+                ['desktop', 'Vista principal'],
+                ['detail', 'Detalle de contenido'],
+                ['mobile', 'Vista adaptable']
+            ];
+            gallery.innerHTML = `<div class="project-slides">${views.map((view, i) => `<figure class="project-slide ${i === 0 ? 'active' : ''}" data-view="${view[0]}"><img src="${src}" alt="${title} — ${view[1]}" loading="lazy"></figure>`).join('')}</div><div class="gallery-controls"><button class="gallery-arrow prev" aria-label="Pantalla anterior">←</button><button class="gallery-arrow next" aria-label="Pantalla siguiente">→</button></div><div class="gallery-dots">${views.map((_, i) => `<button class="gallery-dot ${i === 0 ? 'active' : ''}" aria-label="Ver pantalla ${i + 1}"></button>`).join('')}</div>`;
+            const slides = [...gallery.querySelectorAll('.project-slide')];
+            const dots = [...gallery.querySelectorAll('.gallery-dot')];
+            const label = carousel.querySelector('.screen-label');
+            let current = 0;
+            const show = (index) => {
+                current = (index + slides.length) % slides.length;
+                slides.forEach((slide, i) => slide.classList.toggle('active', i === current));
+                dots.forEach((dot, i) => dot.classList.toggle('active', i === current));
+                label.textContent = `${views[current][1]} · ${current + 1} de ${slides.length}`;
+            };
+            gallery.querySelector('.prev').addEventListener('click', () => show(current - 1));
+            gallery.querySelector('.next').addEventListener('click', () => show(current + 1));
+            dots.forEach((dot, i) => dot.addEventListener('click', () => show(i)));
+            let touchStart = 0;
+            gallery.addEventListener('touchstart', (event) => { touchStart = event.changedTouches[0].clientX; }, { passive: true });
+            gallery.addEventListener('touchend', (event) => { const delta = event.changedTouches[0].clientX - touchStart; if (Math.abs(delta) > 45) show(current + (delta < 0 ? 1 : -1)); }, { passive: true });
+            show(0);
+        });
 
         // Intersection Observer for Scroll Animations
         const observer = new IntersectionObserver((entries) => {
