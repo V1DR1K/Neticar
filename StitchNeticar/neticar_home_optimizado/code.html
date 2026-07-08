@@ -236,8 +236,8 @@
 <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Explora nuestro portafolio de soluciones digitales de alto impacto.</p>
 </div>
 <div class="project-showcase">
-<article class="project-item glass-panel rounded-xl overflow-hidden fade-up" data-project-carousel data-title="Kaza" data-image="assets/projects/project-kaza.png"><div class="project-gallery"></div><div class="project-info"><span class="project-number">01 / 04</span><span class="bg-primary-container text-white text-xs font-bold px-3 py-1 rounded-full self-start uppercase tracking-wider">PropTech</span><h3>Kaza</h3><p>Plataforma inmobiliaria enfocada en una búsqueda clara, visual y rápida.</p><span class="screen-label" aria-live="polite"></span></div></article>
-<article class="project-item glass-panel rounded-xl overflow-hidden fade-up" data-project-carousel data-title="KazaFitness" data-image="assets/projects/project-kazafitness.png"><div class="project-gallery"></div><div class="project-info"><span class="project-number">02 / 04</span><span class="bg-secondary-container text-white text-xs font-bold px-3 py-1 rounded-full self-start uppercase tracking-wider">HealthTech</span><h3>KazaFitness</h3><p>Experiencia digital para entrenamiento, comunidad y hábitos saludables.</p><span class="screen-label" aria-live="polite"></span></div></article>
+<article class="project-item glass-panel rounded-xl overflow-hidden fade-up" data-project-carousel data-title="Kaza" data-images="assets/projects/kaza-explorar.png|assets/projects/kaza-listado.png|assets/projects/kaza-login.png"><div class="project-gallery"></div><div class="project-info"><span class="project-number">01 / 04</span><span class="bg-primary-container text-white text-xs font-bold px-3 py-1 rounded-full self-start uppercase tracking-wider">PropTech</span><h3>Kaza</h3><p>Plataforma inmobiliaria enfocada en una búsqueda clara, visual y rápida.</p><span class="screen-label" aria-live="polite"></span></div></article>
+<article class="project-item glass-panel rounded-xl overflow-hidden fade-up" data-project-carousel data-title="KazaFitness" data-images="assets/projects/kcal-alimentos.png|assets/projects/kcal-recetas.png|assets/projects/kcal-login.png"><div class="project-gallery"></div><div class="project-info"><span class="project-number">02 / 04</span><span class="bg-secondary-container text-white text-xs font-bold px-3 py-1 rounded-full self-start uppercase tracking-wider">HealthTech</span><h3>KazaFitness</h3><p>Experiencia digital para nutrición, seguimiento y hábitos saludables.</p><span class="screen-label" aria-live="polite"></span></div></article>
 <article class="project-item glass-panel rounded-xl overflow-hidden fade-up" data-project-carousel data-title="HGFull" data-image="assets/projects/project-hgfull.png"><div class="project-gallery"></div><div class="project-info"><span class="project-number">03 / 04</span><span class="bg-primary/20 text-primary border border-primary text-xs font-bold px-3 py-1 rounded-full self-start uppercase tracking-wider">Servicios</span><h3>HGFull</h3><p>Sitio comercial que organiza una oferta amplia y facilita el contacto.</p><span class="screen-label" aria-live="polite"></span></div></article>
 <article class="project-item glass-panel rounded-xl overflow-hidden fade-up" data-project-carousel data-title="Chiquitines" data-image="assets/projects/project-chiquitines.png"><div class="project-gallery"></div><div class="project-info"><span class="project-number">04 / 04</span><span class="bg-secondary-container text-white text-xs font-bold px-3 py-1 rounded-full self-start uppercase tracking-wider">E-Commerce</span><h3>Chiquitines</h3><p>Tienda online cálida y accesible, pensada para explorar productos fácilmente.</p><span class="screen-label" aria-live="polite"></span></div></article>
 <!-- Project Card 1 -->
@@ -290,7 +290,7 @@
 <div class="glass-panel rounded-2xl p-8 fade-up relative overflow-hidden visible">
 <div class="absolute top-0 right-0 w-40 h-40 bg-primary/10 rounded-full blur-3xl"></div>
 <div class="team-card-inner relative">
-<div class="profile-portrait"><img alt="Retrato profesional de Tomás Colombo" src="assets/tomas-colombo-profesional-v2.png"/></div>
+<div class="profile-portrait"><img alt="Retrato profesional de Tomás Colombo" src="assets/tomas-colombo-profesional-v3.png"/></div>
 <div><p class="text-primary font-label-caps text-label-caps mb-3">Desarrollador Full Stack &amp; IA</p><h3 class="font-headline-md text-headline-md text-white mb-4">Tomás Colombo</h3><p class="font-body-md text-body-md text-on-surface-variant">Desarrollador full stack con experiencia profesional y en proyectos propios. Cursa el último año de la Tecnicatura Universitaria en Inteligencia Artificial de la UNR, combinando desarrollo de software con soluciones inteligentes.</p></div>
 </div></div></div>
 <div class="hidden">
@@ -461,13 +461,13 @@
         document.querySelectorAll('[data-project-carousel]').forEach((carousel) => {
             const gallery = carousel.querySelector('.project-gallery');
             const title = carousel.dataset.title;
-            const src = carousel.dataset.image;
+            const sources = (carousel.dataset.images || carousel.dataset.image).split('|');
             const views = [
                 ['desktop', 'Vista principal'],
                 ['detail', 'Detalle de contenido'],
                 ['mobile', 'Vista adaptable']
             ];
-            gallery.innerHTML = `<div class="project-slides">${views.map((view, i) => `<figure class="project-slide ${i === 0 ? 'active' : ''}" data-view="${view[0]}"><img src="${src}" alt="${title} — ${view[1]}" loading="lazy"></figure>`).join('')}</div><div class="gallery-controls"><button class="gallery-arrow prev" aria-label="Pantalla anterior">←</button><button class="gallery-arrow next" aria-label="Pantalla siguiente">→</button></div><div class="gallery-dots">${views.map((_, i) => `<button class="gallery-dot ${i === 0 ? 'active' : ''}" aria-label="Ver pantalla ${i + 1}"></button>`).join('')}</div>`;
+            gallery.innerHTML = `<div class="project-slides">${views.map((view, i) => `<figure class="project-slide ${i === 0 ? 'active' : ''}" data-view="${view[0]}"><img src="${sources[i] || sources[0]}" alt="${title} — ${view[1]}" loading="lazy"></figure>`).join('')}</div><div class="gallery-controls"><button class="gallery-arrow prev" aria-label="Pantalla anterior">←</button><button class="gallery-arrow next" aria-label="Pantalla siguiente">→</button></div><div class="gallery-dots">${views.map((_, i) => `<button class="gallery-dot ${i === 0 ? 'active' : ''}" aria-label="Ver pantalla ${i + 1}"></button>`).join('')}</div>`;
             const slides = [...gallery.querySelectorAll('.project-slide')];
             const dots = [...gallery.querySelectorAll('.gallery-dot')];
             const label = carousel.querySelector('.screen-label');
