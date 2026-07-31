@@ -122,7 +122,7 @@ typography:
     marca: "14px"
     cuerpo: "15px"
     lede: "17px"
-    plus-timeline: "20px"
+    plus-timeline: "removed"
     title-md: "22px"
 rounded:
   square: "0px"
@@ -261,10 +261,10 @@ Gramática de dibujo técnico, no de tarjetas.
 - Marco rectángulo 480x450, trazo 1px `--line`; diagonal N en `--violet-bright` (2px) y líneas de cota en `--violet` (1.5px) con puntos de vértice (r5).
 - Nodos `--violet-deep` al 14% con borde `--violet` 1.5px; etiquetas Open Sans 12px 700 sobre `--paper`; cotas Montserrat 9.5px 800 en `--muted-2`. `aria-hidden` con `role="img"` y `aria-label` descriptivo.
 
-### Timeline accordion
+### Timeline (recorrido)
 
-- Línea vertical 1px `--line` a la izquierda; cada entrada con punto de 9px (borde `--violet`, relleno `--sheet-deep`; `--violet-bright` al abrir), periodo como cota precedida por regla violeta de 12px x 1px.
-- Toggle a ancho completo (botón transparente, texto a la izquierda, `+` de 20px `--violet-bright` que rota 45° al abrir); detalle colapsa con `grid-template-rows 0fr → 1fr` en 0.3s; chips de tecnología de 10px Montserrat con borde `--line`.
+- Línea vertical 1px `--line` a la izquierda; cada entrada con punto de 9px (borde `--violet`, relleno `--violet-bright`), periodo como cota precedida por regla violeta de 12px x 1px.
+- **Sin interacción de colapso**: el recorrido nunca es colapsable (pin del usuario). Cada entrada muestra su detalle completo y sus chips de tecnología de 10px Montserrat con borde `--line`, siempre visibles. No hay botones, `hidden` ni animaciones de filas.
 
 ## Layout
 
@@ -299,7 +299,7 @@ Gramática de dibujo técnico, no de tarjetas.
 1. **Navigation** (`components/Navigation.tsx`): header fijo con firma completa oficial `neticar-signature.png` (regla del manual de marca: firma en header; monograma solo cuando no hay espacio —favicon `neticar-mark.png`—), enlaces Perfil / Recorrido / Trabajo / Contacto, CTA "Contacto", menú móvil con foco gestionado (foco al primer link al abrir, Escape lo cierra y devuelve el foco al toggle), `aria-expanded`/`aria-controls`.
 2. **Hero** (`components/Hero.tsx`): headline con acento violeta, resumen, CTA primario a `wa.me/543412639357` con texto prefill, link secundario y diagrama SVG animado.
 3. **Projects** (`components/Projects.tsx`): Lámina 04 · Trabajo, 5 láminas (Kaza, KazaFitness, ServiCerca, HGFull, Chiquitines) que abren WhatsApp en nueva pestaña con mensaje prefill por proyecto, cierre con plate-rule "Continuación en Lámina 05".
-4. **Trajectory** (`components/Trajectory.tsx`): timeline accordion con 4 entradas, `aria-expanded`/`aria-controls`, detalle colapsable y chips de tecnologías.
+4. **Trajectory** (`components/Trajectory.tsx`): timeline estático con 4 entradas siempre visibles (sin toggle, sin colapso) y chips de tecnologías.
 5. **Team** (`components/Team.tsx`): Lámina 02 · Perfil — Tomás Colombo, segunda sección de la página (orden CV: portada, perfil, recorrido, trabajo, contacto).
 6. **Contact** (`components/Contact.tsx`): lámina 05 centrada, CTA WhatsApp y nota "Respondo dentro de las 24 horas".
 7. **Footer** (`components/Footer.tsx`): firma, WhatsApp +54 341 263 9357, copyright con año dinámico.
@@ -308,7 +308,7 @@ Gramática de dibujo técnico, no de tarjetas.
 
 - `lang="es"` en `<html>`; skip-link "Saltar al contenido" → `#contenido` (fijo, entra desde arriba al recibir foco; `#fff` sobre `--violet-bright`, 5.04:1).
 - Foco visible: `outline: 2px solid --violet-bright; outline-offset: 5px` en `:focus-visible` de links y botones.
-- Diagrama oculto a lectores de pantalla (`aria-hidden`) salvo el `role="img"` + `aria-label` del SVG; toggle y timeline con `aria-expanded`/`aria-controls`; menú con label dinámico "Abrir/Cerrar menú".
+- Diagrama oculto a lectores de pantalla (`aria-hidden`) salvo el `role="img"` + `aria-label` del SVG; menú móvil con label dinámico "Abrir/Cerrar menú" y `aria-expanded`/`aria-controls`.
 - Contraste del texto principal: blanco/grises sobre `#08080C` ≥ 5.77:1 (AA para texto normal); violetas de marca reservados a cotas y acentos.
 - `prefers-reduced-motion` y `scripting: none` contemplados.
 

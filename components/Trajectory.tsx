@@ -1,6 +1,3 @@
-"use client";
-
-import { useState } from "react";
 import { Reveal } from "./Reveal";
 
 type TrajectoryEntry = { period: string; organization: string; role: string; detail: string; technologies?: string[] };
@@ -13,17 +10,8 @@ const trajectory: TrajectoryEntry[] = [
 ];
 
 export function Trajectory() {
-  const [openSet, setOpenSet] = useState<Set<number>>(() => new Set(trajectory.map((_, index) => index)));
-  const toggle = (index: number) => {
-    setOpenSet((prev) => {
-      const next = new Set(prev);
-      if (next.has(index)) next.delete(index);
-      else next.add(index);
-      return next;
-    });
-  };
   return <section className="section section-deep" id="recorrido"><div className="container">
     <Reveal><div className="plate-rule"><span className="rule-line" /><span className="plate-label">Lámina 03 · Recorrido</span><span className="rule-line" /></div></Reveal>
-    <div className="trajectory-layout" style={{ marginTop: 64 }}><Reveal className="trajectory-intro"><h2 className="headline">Mi recorrido: experiencia previa construida entre código, producto y sistemas.</h2><p className="lede">Formación técnica continua y trabajo en desafíos de software concretos, desde la secundaria técnica hasta proyectos en producción.</p></Reveal><div className="timeline">{trajectory.map((entry, index) => { const isOpen = openSet.has(index); const detailsId = `trajectory-detail-${index}`; return <Reveal className={`timeline-entry ${isOpen ? "is-open" : ""}`} key={`${entry.organization}-${entry.role}`} delay={index * 80}><p className="cota timeline-period">{entry.period}</p><p className="cota cota-violet timeline-organization">{entry.organization}</p><h3 className="title-md"><button className="timeline-toggle" type="button" aria-expanded={isOpen} aria-controls={detailsId} onClick={() => toggle(index)}>{entry.role}<span className="plus" aria-hidden="true">+</span></button></h3><div className="timeline-detail"><div><div id={detailsId} hidden={!isOpen}><p>{entry.detail}</p>{entry.technologies && <div className="technology-list">{entry.technologies.map((tech) => <span key={tech}>{tech}</span>)}</div>}</div></div></div></Reveal>; })}</div></div>
+    <div className="trajectory-layout" style={{ marginTop: 64 }}><Reveal className="trajectory-intro"><h2 className="headline">Mi recorrido: experiencia previa construida entre código, producto y sistemas.</h2><p className="lede">Formación técnica continua y trabajo en desafíos de software concretos, desde la secundaria técnica hasta proyectos en producción.</p></Reveal><div className="timeline">{trajectory.map((entry, index) => (<Reveal className="timeline-entry" key={`${entry.organization}-${entry.role}`} delay={index * 80}><p className="cota timeline-period">{entry.period}</p><p className="cota cota-violet timeline-organization">{entry.organization}</p><h3 className="title-md">{entry.role}</h3><div className="timeline-detail"><div><div><p>{entry.detail}</p>{entry.technologies && <div className="technology-list">{entry.technologies.map((tech) => <span key={tech}>{tech}</span>)}</div>}</div></div></div></Reveal>))}</div></div>
   </div></section>;
 }

@@ -129,18 +129,11 @@ h1, h2, h3, .title { font-family: var(--font-montserrat), Arial, sans-serif; }
 .timeline { position: relative; }
 .timeline::before { content: ""; position: absolute; top: 8px; bottom: 8px; left: 4px; width: 1px; background: var(--line); }
 .timeline-entry { position: relative; padding: 26px 0 26px 34px; border-bottom: 1px solid var(--line-soft); }
-.timeline-entry::before { content: ""; position: absolute; left: -4px; top: 34px; width: 9px; height: 9px; border-radius: 50%; background: var(--sheet-deep); border: 1px solid var(--violet); }
-.timeline-entry.is-open::before { background: var(--violet-bright); }
+.timeline-entry::before { content: ""; position: absolute; left: -4px; top: 34px; width: 9px; height: 9px; border-radius: 50%; background: var(--violet-bright); border: 1px solid var(--violet); }
 .timeline-period { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
 .timeline-period::before { content: ""; width: 12px; height: 1px; background: var(--violet); }
 .timeline-organization { margin: 0 0 5px; }
-.timeline-toggle { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 0; border: 0; background: transparent; color: var(--paper); font: inherit; text-align: left; cursor: pointer; }
-.timeline-toggle span.plus { color: var(--violet-bright); font-family: var(--font-montserrat), Arial, sans-serif; font-size: 20px; font-weight: 400; line-height: 1; transition: transform .25s; }
-.timeline-entry.is-open .plus { transform: rotate(45deg); }
-.timeline-detail { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .3s ease; }
-.timeline-detail > div { overflow: hidden; }
-.timeline-entry.is-open .timeline-detail { grid-template-rows: 1fr; }
-.timeline-detail > div > p:first-child { margin: 14px 0 0; max-width: 60ch; color: var(--muted); font-size: 15px; line-height: 1.65; }
+.timeline-detail > div > div > p:first-child { margin: 14px 0 0; max-width: 60ch; color: var(--muted); font-size: 15px; line-height: 1.65; }
 .technology-list { margin: 16px 0 0; display: flex; flex-wrap: wrap; gap: 7px; }
 .technology-list span { padding: 4px 9px; border: 1px solid var(--line); font-family: var(--font-montserrat), Arial, sans-serif; font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
 
