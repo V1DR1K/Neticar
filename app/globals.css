@@ -154,9 +154,9 @@ h1, h2, h3, .title { font-family: var(--font-montserrat), Arial, sans-serif; }
 .contact { text-align: center; }
 .contact-inner { max-width: 720px; margin-inline: auto; }
 .contact .cota { margin-bottom: 16px; }
-.contact p { margin: 0 auto 36px; max-width: 52ch; }
+.contact p { max-width: 52ch; margin: 20px auto 36px; }
 .contact-actions { display: flex; align-items: center; justify-content: center; gap: 24px; flex-wrap: wrap; }
-.response-note { margin-top: 22px; display: flex; align-items: center; justify-content: center; gap: 9px; color: var(--muted-2); font-size: 13px; }
+.response-note { display: flex; align-items: center; justify-content: center; gap: 9px; color: var(--muted-2); font-size: 13px; }
 .response-note::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--violet-bright); }
 
 /* ---------- Footer ---------- */
