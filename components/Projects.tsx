@@ -13,23 +13,14 @@ const projects: Project[] = [
   {
     title: "Finca Don Esteban",
     category: "Gestión de eventos",
-    images: [
-      "/images/project-finca-don-esteban-home.png",
-      "/images/project-finca-don-esteban-event.png",
-      "/images/project-finca-don-esteban-dashboard.png",
-    ],
+    images: ["/images/project-finca-don-esteban-devices.png"],
     description: "Sistema de gestión de eventos con emisión y escaneo de QR para organizar reservas y controlar la asistencia en cada jornada.",
     featured: true,
   },
   {
     title: "WhatPlan",
     category: "Producto para parejas",
-    images: [
-      "/images/project-whatplan-home.png",
-      "/images/project-whatplan-place.png",
-      "/images/project-whatplan-visit.png",
-      "/images/project-whatplan-movies.png",
-    ],
+    images: ["/images/project-whatplan-devices.png"],
     description: "Un espacio compartido para registrar salidas, películas, recetas, planes pendientes y fechas especiales, con reseñas, fotos y recuerdos.",
     featured: true,
   },
