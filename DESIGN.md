@@ -145,7 +145,7 @@ spacing:
 
 **Creative North Star: "El Plano" (violetprint)**
 
-El sitio es una hoja de dibujo técnico negra —lienzo `#08080C`— dibujada en tinta violeta de marca. No es una landing oscura genérica: es un plano de ingeniería donde la prueba se mide, no se atenúa. La gramática es la del dibujo técnico: graticule de 72px, cotas con vértices y flechas, esquineros en las esquinas de los elementos, plate-rules con bloques de rótulo ("Lámina 02 · Trabajo") y leyendas PLANO 01..05.
+El sitio es una hoja de dibujo técnico negra —lienzo `#08080C`— dibujada en tinta violeta de marca. No es una landing oscura genérica: es un plano de ingeniería donde la prueba se mide, no se atenúa. La gramática es la del dibujo técnico: graticule de 72px, cotas con vértices y flechas, esquineros en las esquinas de los elementos, plate-rules con bloques de rótulo ("Lámina 02 · Perfil") y leyendas PLANO 01..05.
 
 **Key Characteristics:**
 
@@ -165,7 +165,7 @@ Paleta real de `:root` en `app/globals.css`, alineada al manual de marca (`desig
 | Token | Valor | Uso |
 |---|---|---|
 | `--sheet` | `#08080C` | Lienzo base (body), fondo de rótulos de lámina |
-| `--sheet-raised` | `#0C0B12` | Superficie alterna: secciones elevadas (Trabajo, Perfil) y menú móvil |
+| `--sheet-raised` | `#0C0B12` | Superficie alterna: secciones elevadas (Perfil, Trabajo) y menú móvil |
 | `--sheet-deep` | `#060609` | Superficie profunda: placas de proyecto, Recorrido, Contacto |
 | `--line` | `#2A2733` | Regla estructural: bordes de placas, grilla del timeline, chips |
 | `--line-soft` | `#1B1922` | Regla silenciosa: separadores amplios, border del header/footer |
@@ -220,7 +220,7 @@ Fuentes de Google cargadas con `next/font` en `app/layout.tsx`, expuestas como v
 - **Hero-summary** (Open Sans, `clamp(1.02rem, 1.6vw, 1.18rem)`, lh 1.65, `--muted`, máx. 56ch).
 - **Project-body / Timeline-detail** (Open Sans, 15px, lh 1.6/1.65, `--muted`).
 - **Cota** (Montserrat 800, 11px, ls `.2em`, mayúsculas): metadatos y leyendas de sección; variantes `cota-violet` (`--violet-bright`) y `cota-muted` (`--muted-2`).
-- **Plate-label** (Montserrat 800, 11px, ls `.24em`, mayúsculas): rótulo central de los plate-rules ("Lámina 02 · Trabajo").
+- **Plate-label** (Montserrat 800, 11px, ls `.24em`, mayúsculas): rótulo central de los plate-rules ("Lámina 02 · Perfil").
 - **Diagram-cota** (Montserrat 800, 9.5px, ls `.18em`, `--muted-2`): cotas dentro del SVG del hero.
 - **Button-label** (Montserrat 800, 12px, ls `.08em`, mayúsculas).
 - **Nav-label** (Open Sans 700, 12px, ls `.08em`, mayúsculas): navegación desktop y móvil.
@@ -242,7 +242,7 @@ Gramática de dibujo técnico, no de tarjetas.
 
 ### Plate-rule (regla de bloque de rótulo)
 
-`.plate-rule` es una regla de título de lámina: dos ticks violeta de 9px x 1px en los extremos, línea de 1px `--line` al medio con **vértices** en ambos extremos (cuadrados de 9px con borde violeta rotados -45°/135°), y el rótulo `.plate-label` centrado sobre fondo `--sheet` (Montserrat 11px 800 ls `.24em` en `--violet-bright`, padding lateral 18px). Separa y rotula secciones; en Proyectos cierra con "Continuación en Lámina 03".
+`.plate-rule` es una regla de título de lámina: dos ticks violeta de 9px x 1px en los extremos, línea de 1px `--line` al medio con **vértices** en ambos extremos (cuadrados de 9px con borde violeta rotados -45°/135°), y el rótulo `.plate-label` centrado sobre fondo `--sheet` (Montserrat 11px 800 ls `.24em` en `--violet-bright`, padding lateral 18px). Separa y rotula secciones; en Trabajo cierra con "Continuación en Lámina 05".
 
 ### Botones
 
@@ -296,11 +296,11 @@ Gramática de dibujo técnico, no de tarjetas.
 
 ## Components
 
-1. **Navigation** (`components/Navigation.tsx`): header fijo con firma completa oficial `neticar-signature.png` (regla del manual de marca: firma en header; monograma solo cuando no hay espacio —favicon `neticar-mark.png`—), enlaces Proyectos / Recorrido / Perfil / Contacto, CTA "Contacto", menú móvil con foco gestionado (foco al primer link al abrir, Escape lo cierra y devuelve el foco al toggle), `aria-expanded`/`aria-controls`.
+1. **Navigation** (`components/Navigation.tsx`): header fijo con firma completa oficial `neticar-signature.png` (regla del manual de marca: firma en header; monograma solo cuando no hay espacio —favicon `neticar-mark.png`—), enlaces Perfil / Recorrido / Trabajo / Contacto, CTA "Contacto", menú móvil con foco gestionado (foco al primer link al abrir, Escape lo cierra y devuelve el foco al toggle), `aria-expanded`/`aria-controls`.
 2. **Hero** (`components/Hero.tsx`): headline con acento violeta, resumen, CTA primario a `wa.me/543412639357` con texto prefill, link secundario y diagrama SVG animado.
-3. **Projects** (`components/Projects.tsx`): 5 láminas (Kaza, KazaFitness, ServiCerca, HGFull, Chiquitines) que abren WhatsApp en nueva pestaña con mensaje prefill por proyecto, cierre con plate-rule "Continuación en Lámina 03".
+3. **Projects** (`components/Projects.tsx`): Lámina 04 · Trabajo, 5 láminas (Kaza, KazaFitness, ServiCerca, HGFull, Chiquitines) que abren WhatsApp en nueva pestaña con mensaje prefill por proyecto, cierre con plate-rule "Continuación en Lámina 05".
 4. **Trajectory** (`components/Trajectory.tsx`): timeline accordion con 4 entradas, `aria-expanded`/`aria-controls`, detalle colapsable y chips de tecnologías.
-5. **Team** (`components/Team.tsx`): perfil de Tomás Colombo con imagen en escala de grises, esquineros, caption y link al recorrido.
+5. **Team** (`components/Team.tsx`): Lámina 02 · Perfil — Tomás Colombo, segunda sección de la página (orden CV: portada, perfil, recorrido, trabajo, contacto).
 6. **Contact** (`components/Contact.tsx`): lámina 05 centrada, CTA WhatsApp y nota "Respondo dentro de las 24 horas".
 7. **Footer** (`components/Footer.tsx`): firma, WhatsApp +54 341 263 9357, copyright con año dinámico.
 

@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
-const links = [{ href: "#proyectos", label: "Proyectos" }, { href: "#recorrido", label: "Recorrido" }, { href: "#nosotros", label: "Perfil" }, { href: "#contacto", label: "Contacto" }];
+const links = [{ href: "#nosotros", label: "Perfil" }, { href: "#recorrido", label: "Recorrido" }, { href: "#proyectos", label: "Trabajo" }, { href: "#contacto", label: "Contacto" }];
 
 export function Navigation() {
   const [open, setOpen] = useState(false);
