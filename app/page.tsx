@@ -4,18 +4,8 @@ import { Hero } from "@/components/Hero";
 import { Navigation } from "@/components/Navigation";
 import { Projects } from "@/components/Projects";
 import { Team } from "@/components/Team";
+import { Trajectory } from "@/components/Trajectory";
 
 export default function Home() {
-  return (
-    <>
-      <Navigation />
-      <main>
-        <Hero />
-        <Projects />
-        <Team />
-        <Contact />
-      </main>
-      <Footer />
-    </>
-  );
+  return <><Navigation /><main><Hero /><Projects /><Trajectory /><Team /><Contact /></main><Footer /></>;
 }

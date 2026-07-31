@@ -1,0 +1,119 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation "Navegación principal" [ref=e3]:
+      - link "Neticar, volver al inicio" [ref=e4] [cursor=pointer]:
+        - /url: "#inicio"
+        - img "Neticar" [ref=e5]
+      - generic [ref=e6]:
+        - link "Proyectos" [ref=e7] [cursor=pointer]:
+          - /url: "#proyectos"
+        - link "Recorrido" [ref=e8] [cursor=pointer]:
+          - /url: "#recorrido"
+        - link "Perfil" [ref=e9] [cursor=pointer]:
+          - /url: "#nosotros"
+        - link "Contacto" [ref=e10] [cursor=pointer]:
+          - /url: "#contacto"
+      - link "Contacto" [ref=e11] [cursor=pointer]:
+        - /url: "#contacto"
+  - main [ref=e12]:
+    - generic [ref=e13]:
+      - generic [ref=e14]:
+        - img "Neticar" [ref=e15]
+        - heading [level=1] [ref=e16]:
+          - text: Software a medida para
+          - emphasis [ref=e17]: problemas reales.
+        - paragraph [ref=e18]: Diseño y desarrollo sistemas, productos e integraciones para que PyMEs y fundadores conviertan una necesidad operativa en una solución concreta.
+        - generic [ref=e19]:
+          - link "Hablemos de tu proyecto" [ref=e20] [cursor=pointer]:
+            - /url: "#contacto"
+          - link "Ver trabajo seleccionado" [ref=e21] [cursor=pointer]:
+            - /url: "#proyectos"
+      - generic [ref=e22]:
+        - generic [ref=e23]: ROSARIO, AR
+        - generic [ref=e24]: "2026"
+    - generic [ref=e26]:
+      - generic [ref=e27]:
+        - heading "Trabajo que parte de una necesidad, no de una plantilla." [level=2] [ref=e28]
+        - paragraph [ref=e29]: Una selección de productos digitales y experiencias construidas desde el problema hasta su uso real.
+      - generic "Proyectos seleccionados" [ref=e30]:
+        - generic [ref=e31]:
+          - img "Kaza" [ref=e32]
+          - generic [ref=e33]:
+            - generic [ref=e34]: PropTech
+            - heading "Kaza" [level=3] [ref=e35]
+            - paragraph [ref=e36]: Experiencia digital para explorar y conectar oportunidades inmobiliarias.
+        - generic [ref=e37]:
+          - img "KazaFitness" [ref=e38]
+          - generic [ref=e39]:
+            - generic [ref=e40]: HealthTech
+            - heading "KazaFitness" [level=3] [ref=e41]
+            - paragraph [ref=e42]: Una herramienta enfocada en hábitos, seguimiento y bienestar cotidiano.
+        - generic [ref=e43]:
+          - img "ServiCerca" [ref=e44]
+          - generic [ref=e45]:
+            - generic [ref=e46]: Servicios
+            - heading "ServiCerca" [level=3] [ref=e47]
+            - paragraph [ref=e48]: Una propuesta digital para acercar servicios a quienes los necesitan.
+        - generic [ref=e49]:
+          - img "HGFull" [ref=e50]
+          - generic [ref=e51]:
+            - generic [ref=e52]: Servicios
+            - heading "HGFull" [level=3] [ref=e53]
+            - paragraph [ref=e54]: Solución orientada a ordenar una operación de servicios.
+        - generic [ref=e55]:
+          - img "Chiquitines" [ref=e56]
+          - generic [ref=e57]:
+            - generic [ref=e58]: E-commerce
+            - heading "Chiquitines" [level=3] [ref=e59]
+            - paragraph [ref=e60]: Una experiencia de compra pensada para una marca cercana.
+    - generic [ref=e62]:
+      - generic [ref=e63]:
+        - heading "Un recorrido construido entre código, producto y sistemas." [level=2] [ref=e64]
+        - paragraph [ref=e65]: La experiencia de Neticar se apoya en formación técnica continua y en trabajo con desafíos de software concretos.
+      - generic [ref=e66]:
+        - generic [ref=e67]:
+          - paragraph [ref=e68]: Jun. 2024 — Actualidad
+          - generic [ref=e69]:
+            - paragraph [ref=e70]: CISB SRL
+            - heading [level=3] [ref=e71]:
+              - button "Programador Junior Full Stack" [expanded] [ref=e72]: Programador Junior Full Stack−
+            - generic [ref=e73]:
+              - paragraph [ref=e74]: Participación en soluciones de gestión e integraciones con APIs de Meta (WhatsApp, Instagram y Facebook), facturación y sistemas vinculados a biometría, consumo y ensayos.
+              - paragraph [ref=e75]: Java · Java Swing · Angular · Docker · Git · JavaScript · TypeScript · Hibernate / Jakarta · MySQL · PostgreSQL
+        - generic [ref=e76]:
+          - paragraph [ref=e77]: 6 meses
+          - generic [ref=e78]:
+            - paragraph [ref=e79]: MangooDev
+            - heading [level=3] [ref=e80]:
+              - button "Pasantías de desarrollo de software" [ref=e81]: Pasantías de desarrollo de software+
+        - generic [ref=e82]:
+          - paragraph [ref=e83]: En curso
+          - generic [ref=e84]:
+            - paragraph [ref=e85]: Facultad de Ciencias Agrarias e Ingeniería
+            - heading [level=3] [ref=e86]:
+              - button "Técnico en Inteligencia Artificial" [ref=e87]: Técnico en Inteligencia Artificial+
+        - generic [ref=e88]:
+          - paragraph [ref=e89]: Egresado
+          - generic [ref=e90]:
+            - paragraph [ref=e91]: Instituto Politécnico Superior de Rosario
+            - heading [level=3] [ref=e92]:
+              - button "Técnico Informático" [ref=e93]: Técnico Informático+
+    - generic [ref=e95]:
+      - img "Tomás Colombo" [ref=e97]
+      - generic [ref=e98]:
+        - heading "Detrás de Neticar está Tomás Colombo." [level=2] [ref=e99]
+        - paragraph [ref=e100]: Desarrollador Full Stack y responsable técnico. Combino formación en inteligencia artificial con experiencia construyendo software e integrando sistemas que sostienen operaciones reales.
+        - link "Conocer el recorrido" [ref=e101] [cursor=pointer]:
+          - /url: "#recorrido"
+    - generic [ref=e103]:
+      - heading "¿Tenés una necesidad concreta?" [level=2] [ref=e104]
+      - paragraph [ref=e105]: Contame el contexto de tu proyecto. Vemos juntos cuál puede ser el próximo paso.
+      - link "Escribirme por WhatsApp" [ref=e106] [cursor=pointer]:
+        - /url: https://wa.me/543412639357
+  - contentinfo [ref=e107]:
+    - generic [ref=e108]:
+      - link "Neticar, volver al inicio" [ref=e109] [cursor=pointer]:
+        - /url: "#inicio"
+        - generic [ref=e110]: NETICAR
+      - paragraph [ref=e111]: © 2026 Neticar. Rosario, Argentina.
+  - button "Open Next.js Dev Tools" [ref=e117] [cursor=pointer]
