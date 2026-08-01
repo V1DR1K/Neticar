@@ -3,9 +3,9 @@ import { Reveal } from "./Reveal";
 type TrajectoryEntry = { period: string; organization: string; role: string; detail: string; technologies?: string[] };
 
 const trajectory: TrajectoryEntry[] = [
-  { period: "Jun 2024 — Hoy", organization: "CISB SRL", role: "Programador Junior Full Stack", detail: "Participación en soluciones de gestión, facturación e integraciones con APIs de Meta (WhatsApp, Instagram y Facebook), junto con automatización de procesos. Desarrollo de plataformas para control de asistencia, operación de servicios y seguimiento de ensayos, con capacidad de integrar IA cuando aporta valor al flujo.", technologies: ["Java", "Java Swing", "Angular", "Docker", "Git", "JavaScript", "TypeScript", "Hibernate / Jakarta", "MySQL", "PostgreSQL"] },
-  { period: "6 meses", organization: "MangooDev", role: "Pasantías de desarrollo de software", detail: "Desarrollo de soluciones de software dentro de un equipo profesional." },
+  { period: "Jun 2024 — Hoy", organization: "CISB SRL", role: "Programador Junior Full Stack", detail: "Participación en soluciones de gestión, facturación e integraciones con APIs de Meta (WhatsApp, Instagram y Facebook), junto con automatización de procesos. Desarrollo de plataformas para control de asistencia con registro biométrico, gestión de raciones mediante lectura QR y trazabilidad de ensayos y consumo por radiofrecuencia, integrando IA en los flujos cuando aporta valor al proceso.", technologies: ["Java", "Java Swing", "Angular", "Docker", "Git", "JavaScript", "TypeScript", "Hibernate / Jakarta", "MySQL", "PostgreSQL"] },
   { period: "En curso", organization: "Facultad de Ciencias Agrarias e Ingeniería", role: "Técnico en Inteligencia Artificial", detail: "Formación terciaria en inteligencia artificial aplicada." },
+  { period: "6 meses", organization: "MangooDev", role: "Pasantías de desarrollo de software", detail: "Desarrollo de soluciones de software dentro de un equipo profesional." },
   { period: "Egresado", organization: "Instituto Politécnico Superior de Rosario", role: "Técnico Informático", detail: "Formación secundaria técnica en informática." },
 ];
 
