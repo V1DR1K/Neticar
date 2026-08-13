@@ -40,12 +40,12 @@ const projects: Project[] = [
     category: "Gestión de eventos",
     images: ["/images/project-finca-don-esteban-devices.png"],
     description: "Sistema de gestión de eventos con emisión y escaneo de QR para organizar reservas y controlar la asistencia en cada jornada.",
+    featured: true,
     href: "https://finca-don-esteban.207.180.192.171.nip.io",
   },
   { title: "Kaza", category: "Inmobiliaria", images: ["/images/project-kaza.png"], description: "Experiencia digital para explorar y conectar oportunidades inmobiliarias." },
   { title: "Chiquitines", category: "E-commerce", images: ["/images/project-chiquitines.png"], description: "Una experiencia de compra pensada para una marca cercana." },
   { title: "HGFull", category: "Operaciones", images: ["/images/project-hgfull.png"], description: "Solución orientada a ordenar una operación de servicios." },
-  { title: "ServiCerca", category: "Servicios", images: ["/images/project-servicerca.png"], description: "Una propuesta digital para acercar servicios a quienes los necesitan." },
 ];
 
 const waBase = "https://wa.me/543412639357?text=";

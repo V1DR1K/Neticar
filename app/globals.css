@@ -103,8 +103,8 @@ h1, h2, h3, .title { font-family: var(--font-montserrat), Arial, sans-serif; }
 
 /* ---------- Projects ---------- */
 .project-grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 22px; }
-.project-plate-wrap { grid-column: span 3; }
-.project-plate-wrap-featured { grid-column: span 4; }
+.project-plate-wrap { grid-column: span 4; }
+.project-plate-wrap-featured { grid-column: span 3; }
 .project-plate { display: grid; height: 100%; position: relative; background: var(--sheet-deep); border: 1px solid var(--line); }
 .project-plate::before, .project-plate::after { content: ""; position: absolute; width: 14px; height: 14px; border: 1px solid var(--violet); opacity: .9; pointer-events: none; z-index: 1; }
 .project-plate::before { top: -1px; left: -1px; border-right: 0; border-bottom: 0; }
