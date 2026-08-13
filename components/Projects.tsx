@@ -7,28 +7,45 @@ type Project = {
   images: string[];
   description: string;
   featured?: boolean;
+  href?: string;
 };
 
 const projects: Project[] = [
-  {
-    title: "Finca Don Esteban",
-    category: "Gestión de eventos",
-    images: ["/images/project-finca-don-esteban-devices.png"],
-    description: "Sistema de gestión de eventos con emisión y escaneo de QR para organizar reservas y controlar la asistencia en cada jornada.",
-    featured: true,
-  },
   {
     title: "WhatPlan",
     category: "Producto para parejas",
     images: ["/images/project-whatplan-devices.png"],
     description: "Un espacio compartido para registrar salidas, películas, recetas, planes pendientes y fechas especiales, con reseñas, fotos y recuerdos.",
     featured: true,
+    href: "https://whatplan.neticar.com.ar",
+  },
+  {
+    title: "ScaleGrams",
+    category: "Salud y hábitos",
+    images: ["/images/project-kazafitness.png"],
+    description: "Una herramienta para registrar comidas, calorías y macronutrientes, y seguir un plan nutricional con precisión.",
+    featured: true,
+    href: "https://scalegrams.neticar.com.ar",
+  },
+  {
+    title: "MotorCom",
+    category: "Gestión de talleres",
+    images: ["/images/project-kaza.png"],
+    description: "Órdenes de trabajo, presupuestos e historial para ordenar la operación diaria de talleres de motos.",
+    featured: true,
+    href: "https://avianto.neticar.com.ar",
+  },
+  {
+    title: "Finca Don Esteban",
+    category: "Gestión de eventos",
+    images: ["/images/project-finca-don-esteban-devices.png"],
+    description: "Sistema de gestión de eventos con emisión y escaneo de QR para organizar reservas y controlar la asistencia en cada jornada.",
+    href: "https://finca-don-esteban.207.180.192.171.nip.io",
   },
   { title: "Kaza", category: "Inmobiliaria", images: ["/images/project-kaza.png"], description: "Experiencia digital para explorar y conectar oportunidades inmobiliarias." },
-  { title: "KazaFitness", category: "Salud y hábitos", images: ["/images/project-kazafitness.png"], description: "Una herramienta enfocada en hábitos, seguimiento y bienestar cotidiano." },
-  { title: "ServiCerca", category: "Servicios", images: ["/images/project-servicerca.png"], description: "Una propuesta digital para acercar servicios a quienes los necesitan." },
-  { title: "HGFull", category: "Operaciones", images: ["/images/project-hgfull.png"], description: "Solución orientada a ordenar una operación de servicios." },
   { title: "Chiquitines", category: "E-commerce", images: ["/images/project-chiquitines.png"], description: "Una experiencia de compra pensada para una marca cercana." },
+  { title: "HGFull", category: "Operaciones", images: ["/images/project-hgfull.png"], description: "Solución orientada a ordenar una operación de servicios." },
+  { title: "ServiCerca", category: "Servicios", images: ["/images/project-servicerca.png"], description: "Una propuesta digital para acercar servicios a quienes los necesitan." },
 ];
 
 const waBase = "https://wa.me/543412639357?text=";
@@ -45,7 +62,7 @@ export function Projects() {
         <div className="project-grid" aria-label="Proyectos seleccionados">
           {projects.map((project, index) => (
             <Reveal key={project.title} delay={index * 80} className={`project-plate-wrap${project.featured ? " project-plate-wrap-featured" : ""}`}>
-              <a className="project-plate" href={`${waBase}${encodeURIComponent(`Hola Tomás, vi el proyecto ${project.title} en tu web y quiero consultarte.`)}`} target="_blank" rel="noopener noreferrer" aria-label={`${project.title}: ${project.description} — Consultar por WhatsApp`}>
+              <a className="project-plate" href={project.href ?? `${waBase}${encodeURIComponent(`Hola Tomás, vi el proyecto ${project.title} en tu web y quiero consultarte.`)}`} target="_blank" rel="noopener noreferrer" aria-label={`${project.title}: ${project.description} — ${project.href ? "Visitar landing" : "Consultar por WhatsApp"}`}>
                 <div className={`project-media${project.images.length > 1 ? " project-media-gallery" : ""}`}>
                   {project.images.map((image, imageIndex) => (
                     <div className="project-shot" key={image}>
@@ -57,7 +74,7 @@ export function Projects() {
                   <span className="cota project-category">{project.category}</span>
                   <h3 className="title-md">{project.title}</h3>
                   <p>{project.description}</p>
-                  <span className="cota cota-violet project-action">Consultar por WhatsApp</span>
+                  <span className="cota cota-violet project-action">{project.href ? "Visitar landing" : "Consultar por WhatsApp"}</span>
                 </div>
               </a>
             </Reveal>
