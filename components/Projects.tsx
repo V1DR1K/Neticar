@@ -30,7 +30,7 @@ const projects: Project[] = [
   {
     title: "MotorCom",
     category: "Gestión de talleres",
-    images: ["/images/project-kaza.png"],
+    images: ["/images/project-motorcom-devices.png"],
     description: "Órdenes de trabajo, presupuestos e historial para ordenar la operación diaria de talleres de motos.",
     featured: true,
     href: "https://avianto.neticar.com.ar",
