@@ -206,7 +206,8 @@ footer { padding: 26px 0; background: var(--ink); color: var(--paper); border-to
   .project-wordmark { min-height: 48px; padding-inline: 10px; }
   .project-wordmark-notes { font-size: 22px; }
   .hero-actions { display: grid; grid-template-columns: max-content max-content; align-items: center; gap: 18px 22px; }
-  .hero-actions > .button { grid-column: 1 / -1; justify-self: start; }
+  .hero-actions > .button { grid-column: 1 / -1; grid-row: 1; justify-self: start; }
+  .hero-actions > .text-link { grid-row: 2; }
   .profile-aside { padding-left: 18px; }
   .footer-inner { align-items: flex-start; flex-direction: column; }
 }
