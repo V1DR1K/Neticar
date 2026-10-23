@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: "Recorrido, productos propios y trabajo de Tomás Colombo, desarrollador Full Stack en Rosario.",
     images: ["/og-personal.png"],
   },
-  icons: { icon: "/images/neticar-mark.png" },
+  icons: { icon: "/favicon.svg" },
 };
 
 export const viewport: Viewport = { width: "device-width", initialScale: 1, themeColor: "#F3ECDD" };
