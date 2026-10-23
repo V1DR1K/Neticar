@@ -3,46 +3,41 @@ import { Reveal } from "./Reveal";
 
 type Project = {
   title: string;
-  category: string;
+  brand: "whatplan" | "notes" | "scalegrams" | "avianto";
   image: string;
   imageAlt: string;
   imagePosition?: string;
-  description: string;
   href: string;
 };
 
 const featuredProjects: Project[] = [
   {
     title: "WhatPlan",
-    category: "Producto personal",
+    brand: "whatplan",
     image: "/images/project-whatplan-current.png",
     imageAlt: "Vista actual del módulo WhereFood de WhatPlan",
-    description: "Un espacio compartido para organizar lugares, películas, recetas, salidas, fechas y viajes, y guardar reseñas, fotos y recuerdos.",
     href: "https://whatplan.neticar.com.ar",
   },
   {
     title: "Notes",
-    category: "Producto personal",
+    brand: "notes",
     image: "/images/project-notes-current.png",
     imageAlt: "Panel de Notes con contenido ficticio de muestra",
-    description: "Un espacio personal para reunir el día, las tareas, la agenda, las finanzas, los repositorios, los archivos y las notas.",
     href: "https://notes.neticar.com.ar",
   },
   {
     title: "ScaleGrams",
-    category: "Producto personal",
+    brand: "scalegrams",
     image: "/images/project-scalegrams-current.png",
     imageAlt: "Vista actual del registro diario de muestra en ScaleGrams",
-    description: "Registro de alimentación, objetivos nutricionales y entrenamiento. Las estimaciones desde fotos se revisan antes de guardarse.",
     href: "https://scalegrams.neticar.com.ar",
   },
   {
     title: "Avianto",
-    category: "Gestión de talleres",
+    brand: "avianto",
     image: "/images/project-avianto-current.png",
     imageAlt: "Ficha de servicio de muestra de Avianto para un taller de motos",
     imagePosition: "center 20%",
-    description: "Una plataforma para ordenar ingresos de motos, tareas de servicio, presupuestos e historial de cada taller.",
     href: "https://avianto.neticar.com.ar",
   },
 ];
@@ -67,17 +62,14 @@ export function Projects() {
         <div className="project-grid" aria-label="Proyectos destacados">
           {featuredProjects.map((project, index) => (
             <Reveal key={project.title} delay={index * 70} className="project-plate-wrap project-plate-wrap-featured">
-              <a className="project-plate" href={project.href} target="_blank" rel="noopener noreferrer" aria-label={`${project.title}: ${project.description} Abrir producto en una pestaña nueva.`}>
+              <a className={`project-plate project-plate-${project.brand}`} href={project.href} target="_blank" rel="noopener noreferrer" aria-label={`Ver ${project.title} en una pestaña nueva`}>
+                <span className={`project-wordmark project-wordmark-${project.brand}`} aria-hidden="true">
+                  {project.brand === "whatplan" ? <>What<span>Plan</span></> : project.brand === "notes" ? "notes" : project.title}
+                </span>
                 <div className="project-media">
                   <div className="project-shot">
-                    <Image src={project.image} alt={project.imageAlt} fill sizes="(max-width: 640px) 100vw, (max-width: 900px) 50vw, 50vw" style={project.imagePosition ? { objectPosition: project.imagePosition } : undefined} />
+                    <Image src={project.image} alt={project.imageAlt} fill sizes="(max-width: 640px) 50vw, (max-width: 900px) 50vw, 25vw" style={project.imagePosition ? { objectPosition: project.imagePosition } : undefined} />
                   </div>
-                </div>
-                <div className="project-copy">
-                  <span className="cota project-category">{project.category}</span>
-                  <h3 className="title-md">{project.title}</h3>
-                  <p>{project.description}</p>
-                  <span className="cota project-action">Visitar producto <span aria-hidden="true">↗</span></span>
                 </div>
               </a>
             </Reveal>

@@ -8,6 +8,19 @@ colors:
   muted: "#5B574D"
   amber: "#D5A52C"
   line: "#D8D0BF"
+  whatplan-surface: "#121112"
+  whatplan-ink: "#FFFAF0"
+  whatplan-accent: "#FF6049"
+  notes-surface: "#14171B"
+  notes-ink: "#F2EEE7"
+  notes-accent: "#D5C4FF"
+  scalegrams-surface: "#0E1511"
+  scalegrams-ink: "#E1E3DF"
+  scalegrams-accent: "#4EDEA3"
+  avianto-surface: "#FFFFFF"
+  avianto-ink: "#171728"
+  avianto-accent: "#30348B"
+  avianto-red: "#E52528"
 typography:
   display: "Archivo Black, Impact, sans-serif"
   body: "Source Sans 3, Arial, sans-serif"
@@ -55,7 +68,8 @@ Usar texto negro sobre marfil o ámbar. Ámbar sobre marfil no sirve para texto 
 - Header claro con el nombre de Tomás; Neticar como firma secundaria.
 - Portada a dos columnas: relato y enlaces junto al retrato tratado en blanco y negro, bloque de tinta y sello ámbar.
 - Perfil, recorrido, proyectos y contacto en ese orden; cada etapa del recorrido queda siempre visible.
-- Proyectos en placas rectangulares con borde negro y pequeño desplazamiento de tinta al pasar el puntero. En pantallas chicas se apilan en una columna.
+- Proyectos en miniaturas de marca: cuatro en fila en escritorio y dos columnas en móvil, con nombre de producto y captura enlazada.
+- La fila compacta de proyectos conserva el wordmark y los colores propios de cada producto: WhatPlan coral nocturno, Notes lavanda, ScaleGrams verde menta y Avianto azul/rojo. Las previews muestran solo una captura enlazada, sin repetir descripciones.
 - Trama de papel casi imperceptible; sin grillas técnicas, neón, sombras flotantes ni estética noir.
 - Animaciones breves y prescindibles. `prefers-reduced-motion` las apaga y el contenido no depende de ellas.
 
