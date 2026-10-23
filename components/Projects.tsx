@@ -16,6 +16,7 @@ const featuredProjects: Project[] = [
     brand: "whatplan",
     image: "/images/project-whatplan-current.png",
     imageAlt: "Vista actual del módulo WhereFood de WhatPlan",
+    imagePosition: "center 18%",
     href: "https://whatplan.neticar.com.ar",
   },
   {
@@ -30,6 +31,7 @@ const featuredProjects: Project[] = [
     brand: "scalegrams",
     image: "/images/project-scalegrams-current.png",
     imageAlt: "Vista actual del registro diario de muestra en ScaleGrams",
+    imagePosition: "center 18%",
     href: "https://scalegrams.neticar.com.ar",
   },
   {
@@ -37,7 +39,7 @@ const featuredProjects: Project[] = [
     brand: "avianto",
     image: "/images/project-avianto-current.png",
     imageAlt: "Ficha de servicio de muestra de Avianto para un taller de motos",
-    imagePosition: "center 20%",
+    imagePosition: "center 18%",
     href: "https://avianto.neticar.com.ar",
   },
 ];
@@ -64,7 +66,7 @@ export function Projects() {
             <Reveal key={project.title} delay={index * 70} className="project-plate-wrap project-plate-wrap-featured">
               <a className={`project-plate project-plate-${project.brand}`} href={project.href} target="_blank" rel="noopener noreferrer" aria-label={`Ver ${project.title} en una pestaña nueva`}>
                 <span className={`project-wordmark project-wordmark-${project.brand}`} aria-hidden="true">
-                  {project.brand === "whatplan" ? <>What<span>Plan</span></> : project.brand === "notes" ? "notes" : project.title}
+                  {project.brand === "whatplan" ? <>What<span>Plan</span></> : project.title}
                 </span>
                 <div className="project-media">
                   <div className="project-shot">
