@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Muestra visual ficticia de Notes</title>
+  <desc id="desc">Tablero de ejemplo con agenda, tareas y notas de una persona ficticia. Los datos son ilustrativos.</desc>
+  <rect width="1200" height="720" fill="#eee9de"/>
+  <rect x="26" y="26" width="1148" height="668" rx="14" fill="#faf9f6" stroke="#d8d2c8"/>
+  <rect x="26" y="26" width="1148" height="70" rx="14" fill="#fff"/>
+  <path d="M26 82h1148" stroke="#e9e4db"/>
+  <circle cx="67" cy="61" r="16" fill="#151515"/><path d="M61 61h12M67 55v12" stroke="#fff" stroke-width="2"/>
+  <text x="96" y="68" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#151515">notes</text>
+  <rect x="875" y="43" width="177" height="36" rx="18" fill="#f4f1eb"/><circle cx="897" cy="61" r="10" fill="#d5a52c"/><text x="916" y="66" font-family="Arial,sans-serif" font-size="14" fill="#36332d">Muestra local</text>
+  <circle cx="1112" cy="61" r="18" fill="#ded7c9"/><text x="1112" y="66" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#34312b">LM</text>
+  <text x="70" y="144" font-family="Arial,sans-serif" font-size="13" letter-spacing="2" fill="#777166">MARTES · 20 DE OCTUBRE</text>
+  <text x="70" y="190" font-family="Arial,sans-serif" font-size="34" font-weight="700" fill="#191816">Un día con intención.</text>
+  <text x="70" y="220" font-family="Arial,sans-serif" font-size="16" fill="#777166">Un tablero ficticio para mostrar cómo podría organizarse el día.</text>
+  <rect x="70" y="255" width="512" height="374" rx="12" fill="#fff" stroke="#e6e0d6"/>
+  <text x="96" y="295" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#25231f">Agenda</text>
+  <text x="96" y="331" font-family="Arial,sans-serif" font-size="13" letter-spacing="1" fill="#8a8479">HOY</text>
+  <circle cx="109" cy="373" r="5" fill="#d5a52c"/><text x="130" y="379" font-family="Arial,sans-serif" font-size="14" fill="#777166">09:30</text><text x="206" y="379" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#25231f">Revisar ideas del proyecto</text>
+  <path d="M96 399h460" stroke="#eeeae3"/>
+  <circle cx="109" cy="434" r="5" fill="#d5a52c"/><text x="130" y="440" font-family="Arial,sans-serif" font-size="14" fill="#777166">13:00</text><text x="206" y="440" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#25231f">Almuerzo y pausa</text>
+  <path d="M96 460h460" stroke="#eeeae3"/>
+  <circle cx="109" cy="495" r="5" fill="#d5a52c"/><text x="130" y="501" font-family="Arial,sans-serif" font-size="14" fill="#777166">16:30</text><text x="206" y="501" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#25231f">Ordenar pendientes</text>
+  <rect x="96" y="544" width="460" height="58" rx="8" fill="#f5f1e8"/><text x="114" y="569" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#5e5747">Nota del día</text><text x="114" y="589" font-family="Arial,sans-serif" font-size="13" fill="#777166">Dejar espacio para pensar también cuenta.</text>
+  <rect x="604" y="255" width="526" height="174" rx="12" fill="#171715"/>
+  <text x="632" y="292" font-family="Arial,sans-serif" font-size="13" letter-spacing="1" fill="#d5a52c">ENFOQUE DE HOY</text>
+  <text x="632" y="339" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#f8f5ed">Construir con calma.</text>
+  <text x="632" y="376" font-family="Arial,sans-serif" font-size="15" fill="#c7c1b4">Ejemplo de tarjeta. Todo el contenido es ficticio.</text>
+  <rect x="604" y="449" width="526" height="180" rx="12" fill="#fff" stroke="#e6e0d6"/>
+  <text x="632" y="490" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#25231f">Pendientes</text>
+  <rect x="632" y="512" width="18" height="18" rx="4" fill="#d5a52c"/><path d="m636 521 4 4 7-8" stroke="#171715" stroke-width="2" fill="none"/><text x="665" y="527" font-family="Arial,sans-serif" font-size="15" fill="#5e5a52">Escribir una idea</text>
+  <rect x="632" y="550" width="18" height="18" rx="4" fill="#fff" stroke="#c8c1b4"/><text x="665" y="565" font-family="Arial,sans-serif" font-size="15" fill="#5e5a52">Guardar una referencia</text>
+  <rect x="632" y="588" width="18" height="18" rx="4" fill="#fff" stroke="#c8c1b4"/><text x="665" y="603" font-family="Arial,sans-serif" font-size="15" fill="#5e5a52">Cerrar el día a tiempo</text>
+  <text x="70" y="668" font-family="Arial,sans-serif" font-size="12" letter-spacing="1.3" fill="#81796c">MUESTRA DE PORTFOLIO · INFORMACIÓN COMPLETAMENTE FICTICIA</text>
+</svg>

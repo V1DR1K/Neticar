@@ -1,0 +1,56 @@
+.cv-page { min-height: 100vh; padding: 30px 24px 70px; background: var(--paper); color: var(--ink); }
+.cv-toolbar { width: min(100%, 920px); margin: 0 auto 20px; display: flex; align-items: center; justify-content: space-between; gap: 18px; font-weight: 700; }
+.cv-toolbar > a { border-bottom: 1px solid currentColor; padding-bottom: 4px; }
+.cv-print-button { min-height: 44px; padding: 10px 16px; background: var(--amber); border: 1px solid var(--ink); color: var(--ink); font: 700 13px var(--font-body), Arial, sans-serif; cursor: pointer; }
+.cv-print-button:focus-visible { outline: 3px solid var(--ink); outline-offset: 4px; box-shadow: 0 0 0 6px var(--amber); }
+.cv-sheet { width: min(100%, 920px); min-height: 1100px; margin-inline: auto; padding: clamp(30px, 6vw, 70px); background: var(--paper-raised); border: 1px solid var(--line); box-shadow: 8px 8px 0 var(--ink); }
+.cv-header { display: flex; justify-content: space-between; align-items: flex-end; gap: 32px; padding-bottom: 26px; border-bottom: 7px solid var(--amber); }
+.cv-eyebrow, .cv-period { margin: 0 0 8px; color: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+.cv-header h1 { margin: 0; font-family: var(--font-display), Impact, sans-serif; font-size: clamp(54px, 9vw, 90px); line-height: .8; letter-spacing: -.055em; }
+.cv-header-aside { display: grid; gap: 18px; text-align: right; font-size: 16px; font-weight: 700; }
+.cv-signature { padding-top: 12px; border-top: 1px solid var(--line); font-size: 12px; text-transform: uppercase; letter-spacing: .08em; }
+.cv-section { display: grid; grid-template-columns: minmax(135px, .32fr) minmax(0, 1fr); gap: 30px; padding: 24px 0; border-bottom: 1px solid var(--line); }
+.cv-section > h2 { margin: 0; font-family: var(--font-body), Arial, sans-serif; font-size: 12px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.cv-profile p { margin: 0; max-width: 66ch; color: var(--muted); font-size: 15px; line-height: 1.55; }
+.cv-entries { display: grid; gap: 22px; }
+.cv-entry { display: grid; grid-template-columns: minmax(125px, .35fr) minmax(0, 1fr); gap: 18px; }
+.cv-entry h3 { margin: 0; font-size: 18px; line-height: 1.1; }
+.cv-organization { margin: 5px 0 0; color: var(--muted); font-size: 14px; font-weight: 700; }
+.cv-entry ul { margin: 10px 0 0; padding-left: 17px; color: var(--muted); font-size: 13px; line-height: 1.45; }
+.cv-entry li + li { margin-top: 4px; }
+.cv-skills, .cv-projects { list-style: none; margin: 0; padding: 0; }
+.cv-skills { display: flex; flex-wrap: wrap; gap: 7px; }
+.cv-skills li { padding: 5px 8px; border: 1px solid var(--line); font-size: 12px; font-weight: 600; }
+.cv-projects { display: grid; gap: 9px; }
+.cv-projects li { display: flex; align-items: baseline; gap: 12px; font-size: 13px; }
+.cv-projects a { font-weight: 800; border-bottom: 1px solid var(--amber); }
+.cv-projects span { color: var(--muted); }
+.cv-footer { display: flex; justify-content: space-between; gap: 18px; padding-top: 20px; font-size: 12px; font-weight: 700; }
+.cv-footer a { border-bottom: 1px solid var(--amber); }
+@media (max-width: 640px) {
+  .cv-page { padding: 20px 12px 45px; }
+  .cv-toolbar { font-size: 13px; }
+  .cv-sheet { padding: 24px 18px; box-shadow: 4px 4px 0 var(--ink); }
+  .cv-header { align-items: flex-start; flex-direction: column; }
+  .cv-header-aside { display: flex; width: 100%; justify-content: space-between; align-items: end; text-align: left; }
+  .cv-section, .cv-entry { grid-template-columns: 1fr; gap: 12px; }
+  .cv-footer { flex-direction: column; }
+}
+@page { size: A4 portrait; margin: 12mm; }
+@media print {
+  html, body { background: #fff !important; }
+  .cv-page { min-height: initial; padding: 0; background: #fff; }
+  .cv-toolbar { display: none; }
+  .cv-sheet { width: 100%; min-height: initial; margin: 0; padding: 0; border: 0; box-shadow: none; background: #fff; }
+  .cv-header { padding-bottom: 18px; border-bottom-width: 5px; }
+  .cv-header h1 { font-size: 60px; }
+  .cv-section { padding: 14px 0; gap: 22px; break-inside: avoid; }
+  .cv-entries { gap: 14px; }
+  .cv-entry { gap: 12px; }
+  .cv-entry ul { font-size: 11px; }
+  .cv-skills li { padding: 3px 6px; font-size: 10px; }
+  .cv-footer { padding-top: 14px; }
+  .cv-page a { color: #000; }
+  .cv-section { grid-template-columns: minmax(135px, .32fr) minmax(0, 1fr); gap: 22px; }
+  .cv-entry { grid-template-columns: minmax(125px, .35fr) minmax(0, 1fr); gap: 12px; }
+}

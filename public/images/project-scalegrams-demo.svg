@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Muestra visual ficticia de ScaleGrams</title>
+  <desc id="desc">Panel ilustrativo de registro alimentario con valores inventados, sin recomendaciones médicas.</desc>
+  <rect width="1200" height="720" fill="#eae6db"/>
+  <rect x="26" y="26" width="1148" height="668" rx="18" fill="#f9f8f4" stroke="#d7d1c5"/>
+  <rect x="26" y="26" width="238" height="668" rx="18" fill="#171815"/>
+  <circle cx="73" cy="75" r="19" fill="#d5a52c"/><path d="M64 76c5-12 15-12 19 0-5 12-15 12-19 0Z" fill="none" stroke="#171815" stroke-width="2"/>
+  <text x="105" y="82" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#faf8f1">ScaleGrams</text>
+  <text x="60" y="147" font-family="Arial,sans-serif" font-size="12" letter-spacing="1.5" fill="#9a978c">MENÚ</text>
+  <rect x="47" y="168" width="194" height="44" rx="8" fill="#35342e"/><circle cx="70" cy="190" r="5" fill="#d5a52c"/><text x="88" y="195" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#fffdf6">Resumen</text>
+  <circle cx="70" cy="242" r="5" fill="#77746b"/><text x="88" y="247" font-family="Arial,sans-serif" font-size="14" fill="#d1cec4">Registro</text>
+  <circle cx="70" cy="294" r="5" fill="#77746b"/><text x="88" y="299" font-family="Arial,sans-serif" font-size="14" fill="#d1cec4">Actividad</text>
+  <rect x="47" y="594" width="194" height="66" rx="9" fill="#262621"/><circle cx="73" cy="627" r="16" fill="#d6cebb"/><text x="73" y="632" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#23231f">DF</text><text x="99" y="623" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#fffdf6">Demo ficticia</text><text x="99" y="643" font-family="Arial,sans-serif" font-size="11" fill="#a6a297">Datos de ejemplo</text>
+  <text x="302" y="79" font-family="Arial,sans-serif" font-size="13" letter-spacing="1.3" fill="#777469">VISTA DE MUESTRA</text>
+  <text x="302" y="125" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#1a1b18">Registro de un día</text>
+  <text x="302" y="157" font-family="Arial,sans-serif" font-size="15" fill="#777469">Valores ilustrativos para mostrar el producto.</text>
+  <rect x="302" y="192" width="824" height="188" rx="14" fill="#fff" stroke="#e5e0d5"/>
+  <text x="330" y="231" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#292a25">Resumen nutricional de ejemplo</text>
+  <text x="330" y="284" font-family="Arial,sans-serif" font-size="37" font-weight="700" fill="#20211d">1.840</text><text x="330" y="310" font-family="Arial,sans-serif" font-size="13" fill="#777469">kcal registradas · dato ficticio</text>
+  <rect x="583" y="257" width="1" height="82" fill="#e6e0d5"/>
+  <text x="618" y="277" font-family="Arial,sans-serif" font-size="13" fill="#777469">Proteínas</text><text x="618" y="310" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#20211d">96 g</text><rect x="618" y="328" width="122" height="7" rx="4" fill="#ece8df"/><rect x="618" y="328" width="79" height="7" rx="4" fill="#d5a52c"/>
+  <text x="782" y="277" font-family="Arial,sans-serif" font-size="13" fill="#777469">Carbohidratos</text><text x="782" y="310" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#20211d">210 g</text><rect x="782" y="328" width="122" height="7" rx="4" fill="#ece8df"/><rect x="782" y="328" width="92" height="7" rx="4" fill="#777469"/>
+  <text x="948" y="277" font-family="Arial,sans-serif" font-size="13" fill="#777469">Grasas</text><text x="948" y="310" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#20211d">62 g</text><rect x="948" y="328" width="122" height="7" rx="4" fill="#ece8df"/><rect x="948" y="328" width="62" height="7" rx="4" fill="#252620"/>
+  <rect x="302" y="402" width="824" height="220" rx="14" fill="#fff" stroke="#e5e0d5"/>
+  <text x="330" y="444" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#292a25">Comidas registradas</text>
+  <rect x="330" y="466" width="62" height="62" rx="10" fill="#f2eee5"/><circle cx="361" cy="497" r="16" fill="#d5a52c"/><path d="M350 501c4-14 17-17 23-2-3 12-16 15-23 2Z" fill="#596340"/>
+  <text x="413" y="489" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#292a25">Almuerzo de ejemplo</text><text x="413" y="512" font-family="Arial,sans-serif" font-size="12" fill="#777469">Plato ilustrativo · sin receta médica</text><text x="1040" y="500" text-anchor="end" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#292a25">640 kcal</text>
+  <path d="M330 545h768" stroke="#eeeae2"/>
+  <circle cx="361" cy="583" r="24" fill="#f2eee5"/><path d="M350 588c4-13 18-15 23-2-3 10-16 13-23 2Z" fill="#a56a43"/>
+  <text x="413" y="577" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#292a25">Merienda de ejemplo</text><text x="413" y="600" font-family="Arial,sans-serif" font-size="12" fill="#777469">Alimento ficticio para esta muestra</text><text x="1040" y="588" text-anchor="end" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#292a25">280 kcal</text>
+  <text x="302" y="660" font-family="Arial,sans-serif" font-size="12" letter-spacing="1.1" fill="#817b6d">MUESTRA DE PORTFOLIO · NÚMEROS FICTICIOS · SIN CONSEJO NUTRICIONAL</text>
+</svg>
