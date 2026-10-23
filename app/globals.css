@@ -120,8 +120,8 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--ink); outline-o
 /* Projects */
 .project-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
 .project-plate-wrap, .project-plate-wrap-featured { min-width: 0; }
-.project-plate { --project-surface: var(--whatplan-surface); --project-ink: var(--whatplan-ink); --project-accent: var(--whatplan-accent); display: flex; height: 100%; min-width: 0; flex-direction: column; overflow: hidden; background: var(--project-surface); border: 1px solid var(--project-surface); transition: transform .2s, border-color .2s; }
-.project-plate:hover { transform: translateY(-3px); border-color: var(--project-accent); }
+.project-plate { --project-surface: var(--whatplan-surface); --project-ink: var(--whatplan-ink); --project-accent: var(--whatplan-accent); display: flex; height: 100%; min-width: 0; flex-direction: column; overflow: hidden; background: var(--project-surface); border: 1px solid var(--ink); box-shadow: 5px 5px 0 var(--ink); transition: transform .2s, box-shadow .2s; }
+.project-plate:hover { transform: translate(-3px, -3px); box-shadow: 8px 8px 0 var(--amber); }
 .project-plate-notes { --project-surface: var(--notes-surface); --project-ink: var(--notes-ink); --project-accent: var(--notes-accent); }
 .project-plate-scalegrams { --project-surface: var(--scalegrams-surface); --project-ink: var(--scalegrams-ink); --project-accent: var(--scalegrams-accent); }
 .project-plate-avianto { --project-surface: var(--avianto-surface); --project-ink: var(--avianto-ink); --project-accent: var(--avianto-accent); }
@@ -205,7 +205,8 @@ footer { padding: 26px 0; background: var(--ink); color: var(--paper); border-to
   .project-grid { gap: 12px; }
   .project-wordmark { min-height: 48px; padding-inline: 10px; }
   .project-wordmark-notes { font-size: 22px; }
-  .hero-actions { align-items: flex-start; gap: 18px 22px; }
+  .hero-actions { display: grid; grid-template-columns: max-content max-content; align-items: center; gap: 18px 22px; }
+  .hero-actions > .button { grid-column: 1 / -1; justify-self: start; }
   .profile-aside { padding-left: 18px; }
   .footer-inner { align-items: flex-start; flex-direction: column; }
 }

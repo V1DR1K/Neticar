@@ -68,7 +68,7 @@ Usar texto negro sobre marfil o ámbar. Ámbar sobre marfil no sirve para texto 
 - Header claro con el nombre de Tomás; Neticar como firma secundaria.
 - Portada a dos columnas: relato y enlaces junto al retrato tratado en blanco y negro, bloque de tinta y sello ámbar.
 - Perfil, recorrido, proyectos y contacto en ese orden; cada etapa del recorrido queda siempre visible.
-- Proyectos en miniaturas de marca: cuatro en fila en escritorio y dos columnas en móvil, con nombre de producto y captura enlazada.
+- Proyectos en miniaturas de marca con marco de tinta y sombra diagonal: cuatro en fila en escritorio y dos columnas en móvil, con nombre de producto y captura enlazada.
 - La fila compacta de proyectos conserva el wordmark y los colores propios de cada producto: WhatPlan coral nocturno, Notes lavanda, ScaleGrams verde menta y Avianto azul/rojo. Las previews muestran solo una captura enlazada, sin repetir descripciones.
 - Trama de papel casi imperceptible; sin grillas técnicas, neón, sombras flotantes ni estética noir.
 - Animaciones breves y prescindibles. `prefers-reduced-motion` las apaga y el contenido no depende de ellas.
