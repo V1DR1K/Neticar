@@ -66,7 +66,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--ink); outline-o
 .hero-art-index { display: inline-block; position: absolute; top: -19px; right: 0; z-index: 2; background: var(--amber); padding: 9px 13px; font-size: 12px; font-weight: 800; letter-spacing: .1em; }
 .hero-portrait-wrap { position: relative; background: var(--ink); padding: 14px 14px 56px; transform: rotate(1.2deg); box-shadow: 17px 17px 0 var(--amber); }
 .hero-portrait-wrap::before { content: ""; position: absolute; z-index: 1; inset: 0 0 auto; height: 12px; background: var(--paper); }
-.hero-portrait { width: 100%; height: clamp(330px, 44vw, 520px); display: block; object-fit: cover; object-position: center 36%; filter: grayscale(1) contrast(1.05); }
+.hero-portrait { width: 100%; height: clamp(330px, 44vw, 520px); display: block; object-fit: cover; object-position: center 36%; filter: saturate(.92) contrast(1.03); }
 .portrait-stamp { position: absolute; right: 28px; bottom: 25px; color: var(--paper); font-family: var(--font-display), Impact, sans-serif; font-size: 16px; line-height: .95; letter-spacing: -.02em; }
 .hero-caption { margin: 29px 0 0; max-width: 35ch; color: var(--muted); font-size: 14px; font-style: italic; }
 .hero-index { position: relative; margin-top: clamp(42px, 6vh, 70px); padding-top: 15px; border-top: 1px solid var(--line); display: flex; gap: 24px; align-items: center; flex-wrap: wrap; }
