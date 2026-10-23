@@ -40,7 +40,7 @@ Productos personales destacados y evidencia pública revisada:
 - **ScaleGrams:** bitácora para comidas y objetivos nutricionales, estimación asistida desde fotos con revisión antes de guardar, entrenamiento de gimnasio/calistenia y cardio.
 - **Notes:** espacio personal con secciones para el día, tareas, agenda, finanzas, repositorios, archivos y notas. El panel activo puede mostrar información privada; cualquier imagen promocional debe usar datos ficticios o cuidadosamente anonimizados. No reutilizar valores reales de la cuenta.
 
-Implementado para el portfolio: WhatPlan, Notes y ScaleGrams aparecen como los tres proyectos personales destacados. Notes y ScaleGrams usan muestras sintéticas identificadas como tales; la paginación del CV al imprimir todavía necesita revisión en el diálogo de impresión de un navegador normal.
+Implementado para el portfolio: WhatPlan, Notes y ScaleGrams aparecen como productos personales destacados; Avianto se suma como proyecto de gestión para talleres de motos. Notes usa una captura de la interfaz con datos ficticios; WhatPlan, ScaleGrams y Avianto usan capturas de sus demos públicas. La paginación del CV al imprimir todavía necesita revisión en el diálogo de impresión de un navegador normal.
 
 ## Product Principles
 

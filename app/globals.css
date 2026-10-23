@@ -107,7 +107,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--ink); outline-o
 /* Projects */
 .project-grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 22px; }
 .project-plate-wrap { grid-column: span 4; }
-.project-plate-wrap-featured { grid-column: span 4; }
+.project-plate-wrap-featured { grid-column: span 6; }
 .project-plate { display: grid; height: 100%; position: relative; background: var(--paper-raised); border: 1px solid var(--ink); box-shadow: 5px 5px 0 var(--ink); transition: transform .2s, box-shadow .2s; }
 .project-plate:hover { transform: translate(-3px, -3px); box-shadow: 8px 8px 0 var(--amber); }
 .project-media { position: relative; aspect-ratio: 16 / 10; overflow: hidden; border-bottom: 1px solid var(--ink); background: #e5dfd2; }

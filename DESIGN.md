@@ -24,7 +24,7 @@ La web es una presentación profesional en primera persona: Tomás Colombo ocupa
 
 ## Dirección visual
 
-**Afiche editorial autobiográfico.** Retrato reconocible, titulares de presencia, márgenes generosos, bloques de tinta, reglas finas y trama de papel sutil. Los tres productos personales —WhatPlan, Notes y ScaleGrams— tienen el mismo nivel de atención.
+**Afiche editorial autobiográfico.** Retrato reconocible, titulares de presencia, márgenes generosos, bloques de tinta, reglas finas y trama de papel sutil. WhatPlan, Notes y ScaleGrams tienen el mismo nivel de atención como productos personales; Avianto se destaca junto a ellos como una solución de gestión para talleres.
 
 La paleta anterior negra y violeta pertenece al sistema histórico de Neticar y no gobierna este rediseño. Consultar `IDENTIDAD-DE-MARCA.md` para usos, voz, ejemplos y mantenimiento.
 
