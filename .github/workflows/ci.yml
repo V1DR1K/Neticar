@@ -45,7 +45,7 @@ jobs:
           VPS_USER: ${{ secrets.VPS_USER }}
         run: |
           ssh "$VPS_USER@$VPS_HOST" \
-            "cd /opt/apps/kaza/Neticar && \
+            "cd /opt/projects/neticar/front/neticar && \
               git fetch origin main && \
               git reset --hard '${{ github.sha }}' && \
               /opt/infra/bin/deploy-service neticar web"
