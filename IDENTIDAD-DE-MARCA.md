@@ -25,9 +25,9 @@ Usar oraciones breves, verbos concretos y afirmaciones que se puedan respaldar. 
 
 ### Dirección
 
-**Afiche editorial autobiográfico:** una presencia personal fuerte, composición de afiche impreso, márgenes generosos, titulares grandes, reglas finas y textura muy sutil. El retrato debe dejar ver el rostro de Tomás y conservar una lectura cálida. El resultado no debe parecer un póster de cine ni un template de estudio.
+**Afiche editorial autobiográfico:** una presencia personal fuerte, composición de afiche impreso, márgenes generosos, titulares grandes, reglas finas y textura muy sutil. El retrato publicado muestra a Tomás de espaldas, caminando en un entorno natural; esa fotografía es la referencia aprobada y se conserva en color y con su contexto. El sistema no presupone que el rostro deba estar visible. El resultado no debe parecer un póster de cine ni un template de estudio.
 
-### Paleta propuesta
+### Paleta vigente
 
 | Nombre | Valor | Uso |
 |---|---|---|
@@ -41,27 +41,33 @@ La combinación tinta sobre marfil tiene contraste 16.73:1; tinta sobre ámbar, 
 
 Estos valores vienen de la dirección aprobada para la web. La identidad anterior de violetas queda archivada como antecedente, no como regla vigente para este rediseño.
 
-### Tipografía propuesta
+### Tipografía vigente
 
 - **Archivo Black:** titulares cortos, nombre y números de sección. Usar a escala grande y con líneas breves.
 - **Source Sans 3:** párrafos, navegación, etiquetas y CV; mantener interlineado cómodo y jerarquía clara.
 - **Fallback:** sans-serif del sistema si las fuentes no están disponibles.
 
-Es una propuesta tipográfica para el sitio; Tomás aún puede ajustar la preferencia. No usar la fuente display en párrafos largos.
+Estas son las familias que usa el sitio publicado. No usar la fuente display en párrafos largos.
 
 ### Fotografía y recursos gráficos
 
-- Preferir retrato cercano y reconocible; el tratamiento editorial puede usar blanco y negro, recorte firme y fondo marfil.
-- No aplicar efectos que escondan la expresión o hagan parecer que la imagen es de otra persona.
-- Usar sombras diagonales, numeración grande, bloques delimitados y trama de papel con poca opacidad.
+- Usar el retrato real publicado de Tomás, de espaldas y en contexto natural. Conservar color, encuadre y entorno; no recortar para simular un retrato frontal ni reemplazarlo por una imagen inventada.
+- Usar sombras diagonales, numeración grande, bloques delimitados y trama de papel con poca opacidad, según las aplicaciones visibles en el sitio.
 - El recurso ámbar debe conducir la mirada; no cubrir grandes áreas de contenido.
 - No usar clichés noir, armas, archivos policiales, neón violeta ni grillas de plano técnico.
+
+### Recursos de interfaz publicados
+
+- Los rótulos breves en mayúsculas ayudan a ubicar secciones.
+- El perfil usa una barra ocre lateral de 6px.
+- Las tarjetas destacadas usan una sombra negra desplazada de 5px, que pasa a ocre al interactuar.
+- El monograma TC del encabezado se presenta sin subrayado; la variante del favicon conserva el subrayado ocre.
 
 ## Aplicaciones
 
 - **Portada web:** nombre y rol de Tomás en primer plano; Neticar como firma secundaria; retrato, ubicación y enlaces a recorrido, CV y contacto.
+- **CV:** la ruta `/cv` muestra una presentación profesional imprimible, con fondo claro y acción para imprimir o guardar como PDF.
 - **Caso de proyecto:** título, función del producto, rol de Tomás confirmado, evidencia visual y enlace. Los mockups se identifican como muestras cuando no son capturas reales.
-- **CV:** fondo claro para impresión, tinta negra, ámbar solo como marcador y enlaces legibles.
 - **Avatar o firma social:** usar el retrato de Tomás para perfiles personales; reservar el logo de Neticar como firma o ícono de proyecto.
 
 ## Usos a evitar

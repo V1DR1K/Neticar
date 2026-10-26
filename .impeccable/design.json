@@ -1,84 +1,61 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-07-31T00:00:00-03:00",
-  "title": "Design System: Neticar",
+  "generatedAt": "2026-10-26T00:00:00-03:00",
+  "title": "Neticar · Tomás Colombo",
   "extensions": {
     "colorMeta": {
-      "ink": { "role": "neutral", "displayName": "Archive Ink", "canonical": "#0a0a0d", "tonalRamp": ["#09090b", "#18181b", "#27272a", "#3f3f46", "#52525b", "#71717a", "#a1a1aa", "#f4f4f5"] },
-      "raised": { "role": "neutral", "displayName": "Raised Graphite", "canonical": "#111116", "tonalRamp": ["#0d0d11", "#111116", "#202027", "#303038", "#474650", "#686471", "#b8b1c1", "#f4f0fa"] },
-      "graphite": { "role": "neutral", "displayName": "Graphite Card", "canonical": "#17171d", "tonalRamp": ["#111116", "#17171d", "#202027", "#303038", "#4a4852", "#6e6975", "#b8b1c1", "#f4f0fa"] },
-      "deep-field": { "role": "neutral", "displayName": "Deep Field", "canonical": "#0d0d11", "tonalRamp": ["#0a0a0d", "#0d0d11", "#1b1b21", "#303038", "#494650", "#696573", "#b8b1c1", "#f4f0fa"] },
-      "line": { "role": "neutral", "displayName": "Structural Rule", "canonical": "#303038", "tonalRamp": ["#111116", "#202027", "#303038", "#484650", "#605d69", "#817b88", "#b8b1c1", "#f4f0fa"] },
-      "soft-line": { "role": "neutral", "displayName": "Quiet Rule", "canonical": "#202027", "tonalRamp": ["#0a0a0d", "#111116", "#202027", "#303038", "#484650", "#686471", "#b8b1c1", "#f4f0fa"] },
-      "paper": { "role": "neutral", "displayName": "Cool Paper", "canonical": "#f4f0fa", "tonalRamp": ["#302d35", "#4b4652", "#68616f", "#817b88", "#a49daa", "#c9c2d0", "#e5dfeb", "#f4f0fa"] },
-      "muted": { "role": "neutral", "displayName": "Technical Gray", "canonical": "#b8b1c1", "tonalRamp": ["#242129", "#3e3944", "#5c5663", "#817b88", "#9c95a4", "#b8b1c1", "#d7d0df", "#f4f0fa"] },
-      "violet": { "role": "primary", "displayName": "Signal Violet", "canonical": "#9f42eb", "tonalRamp": ["#25073f", "#3d0a69", "#551092", "#6d16bf", "#8730d8", "#9f42eb", "#c076ff", "#ebd8ff"] },
-      "violet-deep": { "role": "primary", "displayName": "Deep Violet", "canonical": "#6d16bf", "tonalRamp": ["#25073f", "#3d0a69", "#551092", "#6d16bf", "#8730d8", "#9f42eb", "#c076ff", "#ebd8ff"] },
-      "violet-soft": { "role": "secondary", "displayName": "Orchid Metadata", "canonical": "#c8a4e9", "tonalRamp": ["#2c183d", "#49305f", "#67457f", "#85609f", "#a67dc2", "#c8a4e9", "#e0c8f6", "#f4eaff"] },
-      "violet-bright": { "role": "secondary", "displayName": "Bright Editorial Violet", "canonical": "#b865ff", "tonalRamp": ["#2d0948", "#4a1075", "#6816a3", "#8521cf", "#a344ed", "#b865ff", "#d398ff", "#f0d9ff"] }
+      "paper": { "role": "neutral", "displayName": "Warm Paper", "canonical": "#F3ECDD", "tonalRamp": ["#27251F", "#5B574D", "#898271", "#B7AF9F", "#D8D0BF", "#E5DDCE", "#F3ECDD", "#FAF7EF"] },
+      "paper-raised": { "role": "neutral", "displayName": "Raised Paper", "canonical": "#FAF7EF", "tonalRamp": ["#27251F", "#5B574D", "#898271", "#B7AF9F", "#D8D0BF", "#E5DDCE", "#F3ECDD", "#FAF7EF"] },
+      "ink": { "role": "neutral", "displayName": "Signature Ink", "canonical": "#0B0B0B", "tonalRamp": ["#0B0B0B", "#27251F", "#46433B", "#5B574D", "#898271", "#B7AF9F", "#C8C1B3", "#F3ECDD"] },
+      "ink-soft": { "role": "neutral", "displayName": "Soft Ink", "canonical": "#27251F", "tonalRamp": ["#0B0B0B", "#27251F", "#46433B", "#5B574D", "#898271", "#B7AF9F", "#C8C1B3", "#F3ECDD"] },
+      "muted": { "role": "neutral", "displayName": "Warm Secondary Text", "canonical": "#5B574D", "tonalRamp": ["#27251F", "#46433B", "#5B574D", "#898271", "#B7AF9F", "#D8D0BF", "#E5DDCE", "#F3ECDD"] },
+      "muted-on-ink": { "role": "neutral", "displayName": "Secondary Text on Ink", "canonical": "#C8C1B3", "tonalRamp": ["#0B0B0B", "#27251F", "#46433B", "#5B574D", "#898271", "#B7AF9F", "#C8C1B3", "#F3ECDD"] },
+      "amber": { "role": "primary", "displayName": "Signature Ochre", "canonical": "#D5A52C", "tonalRamp": ["#40300C", "#765718", "#946D16", "#B98B21", "#D5A52C", "#E3B83F", "#EFD176", "#FAE9B6"] },
+      "line": { "role": "neutral", "displayName": "Warm Rule", "canonical": "#D8D0BF", "tonalRamp": ["#46433B", "#5B574D", "#898271", "#B7AF9F", "#D8D0BF", "#E5DDCE", "#F3ECDD", "#FAF7EF"] },
+      "line-on-ink": { "role": "neutral", "displayName": "Dark Rule", "canonical": "#46433B", "tonalRamp": ["#0B0B0B", "#27251F", "#46433B", "#5B574D", "#898271", "#B7AF9F", "#D8D0BF", "#F3ECDD"] }
     },
     "typographyMeta": {
-      "display": { "displayName": "Editorial Display", "purpose": "Hero proposition only; it creates the page's strongest visual commitment." },
-      "headline": { "displayName": "Section Headline", "purpose": "Large declarative statements at the start of content regions." },
-      "title": { "displayName": "Record Title", "purpose": "Project names and timeline roles." },
-      "body": { "displayName": "Operational Body", "purpose": "Readable context and evidence in compact measures." },
-      "label": { "displayName": "Technical Label", "purpose": "Navigation, CTA, and metadata language." }
+      "display": { "displayName": "Archivo Black", "purpose": "Nombre, firma, monograma y titulares de alta jerarquía." },
+      "body": { "displayName": "Source Sans 3", "purpose": "Lectura, navegación, categorías y controles." }
     },
-    "shadows": [],
+    "shadows": [
+      { "name": "mobile-menu", "value": "0 12px 28px rgba(11, 11, 11, .12)", "usage": "Separar el menú compacto del contenido sin añadir profundidad a las tarjetas." }
+    ],
     "motion": [
-      { "name": "reveal", "value": "opacity 0.55s ease-out, transform 0.55s ease-out; translateY(18px) to none", "usage": "Enter sections and records once when they become visible; remove it under prefers-reduced-motion." },
-      { "name": "project-hover", "value": "opacity 0.35s ease, transform 0.45s ease; scale(1.03)", "usage": "Give project imagery a restrained response without lifting the card." }
+      { "name": "section-reveal", "value": "opacity .55s ease-out, translateY(14px) to none", "usage": "Dar entrada a las secciones una vez; desactivar con prefers-reduced-motion." },
+      { "name": "project-image", "value": "transform .45s cubic-bezier(.16, 1, .3, 1); scale(1.025)", "usage": "Respuesta contenida de imagen y borde en hover; sin ocultar información en móvil." }
     ],
     "breakpoints": [
-      { "name": "compact", "value": "800px", "behavior": "Single-column editorial layouts, mobile navigation, two-column project grid." },
-      { "name": "phone", "value": "540px", "behavior": "Single-column project grid and stacked hero actions." }
+      { "name": "editorial-tablet", "value": "900px", "behavior": "Adaptar la portada y apilar el perfil y el recorrido." },
+      { "name": "navigation", "value": "800px", "behavior": "Sustituir navegación desktop por menú accesible." },
+      { "name": "phone", "value": "600px", "behavior": "Apilar portada, perfil y proyectos." },
+      { "name": "narrow-phone", "value": "360px", "behavior": "Ajustar firma, márgenes e índice." }
     ],
     "components": [
       {
-        "name": "Primary button",
+        "name": "Marca TC",
+        "category": "brand",
+        "html": "<a class=\"brand\"><span class=\"brand-mark\">TC</span><span class=\"brand-text\"><strong>Tomás Colombo</strong><small>Neticar · firma personal</small></span></a>",
+        "css": ".brand{display:inline-flex;align-items:center;gap:11px}.brand-mark{display:grid;place-items:center;width:38px;height:38px;background:#0B0B0B;color:#F3ECDD;font:17px 'Archivo Black',Arial,sans-serif}.brand-mark:after{content:'';position:absolute;left:8px;right:8px;bottom:5px;height:3px;background:#D5A52C}"
+      },
+      {
+        "name": "Acción principal",
         "category": "button",
-        "html": "<a class=\"ds-btn-primary\" href=\"#contact\">Hablemos del proyecto</a>",
-        "css": ".ds-btn-primary{min-height:44px;display:inline-flex;align-items:center;justify-content:center;padding:11px 20px;border:1px solid var(--violet,#9f42eb);border-radius:0;background:var(--violet-deep,#6d16bf);color:#fff;font:800 12px/1 'Open Sans',Arial,sans-serif;letter-spacing:.055em;text-decoration:none;text-transform:uppercase;transition:background .2s,border-color .2s,color .2s}.ds-btn-primary:hover{background:var(--violet,#9f42eb)}.ds-btn-primary:focus-visible{outline:2px solid #c67cff;outline-offset:5px}.ds-btn-primary:active{background:#551092}"
+        "html": "<a class=\"button button-primary\" href=\"#contacto\">Hablemos de tu proyecto</a>",
+        "css": ".button-primary{min-height:48px;padding:12px 22px;border:1px solid #D5A52C;border-radius:4px;background:#D5A52C;color:#0B0B0B;font:700 14px 'Source Sans 3',Arial,sans-serif}.button-primary:hover{background:#E3B83F}"
       },
       {
-        "name": "Text link",
-        "category": "link",
-        "html": "<a class=\"ds-text-link\" href=\"#work\">Ver trabajo seleccionado</a>",
-        "css": ".ds-text-link{display:inline-flex;padding-bottom:5px;border-bottom:1px solid #73707c;color:var(--paper,#f4f0fa);font:700 13px/1 'Open Sans',Arial,sans-serif;text-decoration:none;transition:color .2s,border-color .2s}.ds-text-link:hover{border-color:#d3a7ff;color:#d3a7ff}.ds-text-link:focus-visible{outline:2px solid #c67cff;outline-offset:5px}"
+        "name": "Proyecto",
+        "category": "content",
+        "html": "<article class=\"project-plate\"><img alt=\"Captura del producto\"><h3>WhatPlan</h3><p>Descripción concreta del proyecto.</p></article>",
+        "css": ".project-plate{display:flex;flex-direction:column;overflow:hidden;border:1px solid #D8D0BF;border-radius:14px;background:#FAF7EF}.project-copy{padding:22px 24px 24px}.project-copy p{color:#5B574D;font:15px/1.6 'Source Sans 3',Arial,sans-serif}"
       },
       {
-        "name": "Project card",
-        "category": "card",
-        "html": "<article class=\"ds-project-card\"><div class=\"ds-project-image\"></div><div class=\"ds-project-copy\"><span>PropTech</span><h3>Kaza</h3><p>Experiencia digital para explorar oportunidades.</p></div></article>",
-        "css": ".ds-project-card{position:relative;display:flex;min-height:385px;overflow:hidden;align-items:flex-end;border:1px solid var(--line,#303038);border-radius:0;background:var(--graphite,#17171d);color:var(--paper,#f4f0fa)}.ds-project-image{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,10,13,.98) 8%,rgba(10,10,13,.15) 75%),linear-gradient(135deg,#40314d,#17171d 56%,#6d16bf);opacity:.7;transition:opacity .35s ease,transform .45s ease}.ds-project-card:hover .ds-project-image{opacity:.9;transform:scale(1.03)}.ds-project-copy{position:relative;padding:26px}.ds-project-copy span{display:block;margin-bottom:13px;color:var(--violet-soft,#c8a4e9);font:800 11px/1 'Open Sans',Arial,sans-serif;letter-spacing:.13em;text-transform:uppercase}.ds-project-copy h3{margin:0 0 8px;font:800 25px/1.08 Montserrat,Arial,sans-serif;letter-spacing:-.03em}.ds-project-copy p{margin:0;color:#d2ccd8;font:14px/1.55 'Open Sans',Arial,sans-serif}"
-      },
-      {
-        "name": "Archive navigation",
-        "category": "navigation",
-        "html": "<nav class=\"ds-nav\"><strong>NETICAR</strong><div><a href=\"#work\">Proyectos</a><a href=\"#contact\">Contacto</a></div></nav>",
-        "css": ".ds-nav{display:flex;min-height:72px;align-items:center;justify-content:space-between;border-bottom:1px solid var(--soft-line,#202027);background:var(--ink,#0a0a0d);color:var(--paper,#f4f0fa);padding:0 24px}.ds-nav strong{font:800 12px/1 Montserrat,Arial,sans-serif;letter-spacing:.12em}.ds-nav div{display:flex;gap:28px}.ds-nav a{color:var(--muted,#b8b1c1);font:700 12px/1 'Open Sans',Arial,sans-serif;letter-spacing:.08em;text-decoration:none;text-transform:uppercase}.ds-nav a:hover{color:#d3a7ff}.ds-nav a:focus-visible{outline:2px solid #c67cff;outline-offset:5px}"
-      },
-      {
-        "name": "Timeline record",
-        "category": "disclosure",
-        "html": "<article class=\"ds-timeline\"><p>Jun. 2024 — Actualidad</p><div><span>CISB SRL</span><button>Programador Junior Full Stack <b>−</b></button><small>Soluciones de gestión e integraciones para operaciones reales.</small></div></article>",
-        "css": ".ds-timeline{display:grid;grid-template-columns:165px 1fr;gap:30px;padding:31px 0;border-top:1px solid var(--line,#303038);color:var(--paper,#f4f0fa)}.ds-timeline p,.ds-timeline span{margin:0;color:var(--violet-soft,#c8a4e9);font:800 11px/1.5 'Open Sans',Arial,sans-serif;letter-spacing:.13em;text-transform:uppercase}.ds-timeline span{display:block;margin-bottom:10px}.ds-timeline button{display:flex;width:100%;align-items:center;justify-content:space-between;gap:18px;border:0;background:transparent;padding:0;color:inherit;font:800 21px/1.08 Montserrat,Arial,sans-serif;letter-spacing:-.025em;text-align:left}.ds-timeline button b{color:var(--violet-soft,#c8a4e9);font:400 26px/1 'Open Sans',Arial,sans-serif}.ds-timeline small{display:block;margin-top:14px;color:var(--muted,#b8b1c1);font:15px/1.65 'Open Sans',Arial,sans-serif}.ds-timeline button:focus-visible{outline:2px solid #c67cff;outline-offset:5px}@media(max-width:540px){.ds-timeline{grid-template-columns:1fr;gap:12px;padding:25px 0}}"
+        "name": "Recorrido",
+        "category": "content",
+        "html": "<article class=\"timeline-entry\"><p>Jun 2024 - Hoy</p><h3>Programador Junior Full Stack</h3><p>Detalle y tecnologías siempre visibles.</p></article>",
+        "css": ".section-deep{background:#0B0B0B;color:#F3ECDD}.timeline-entry{border-bottom:1px solid #46433B}.timeline-organization{color:#D5A52C}.timeline-detail p{color:#C8C1B3}"
       }
     ]
-  },
-  "narrative": {
-    "northStar": "The Technical Archive",
-    "overview": "Neticar reads as a premium, nocturnal record of technical work: graphite fields, measured editorial type, thin structural rules, and a violet signal used with intent. It is composed to make a direct service offer feel credible before it feels promotional.\n\nThe interface stays quiet enough for project imagery and practical copy to carry the evidence. Large type creates the hierarchy; tonal shifts and borders organize the page instead of floating panels, glass effects, neon treatments, or decorative gradients.",
-    "keyCharacteristics": ["Dark, archival tonal fields rather than a single flat black canvas.", "Dense, left-led editorial hierarchy with clear working margins.", "Restrained violet used as a signal for action, emphasis, and metadata.", "Square-cut, ruled components with purposeful image treatment."],
-    "rules": [
-      { "name": "The Evidence-First Rule", "body": "The visual system gives work, experience, and a direct action room to establish trust; decoration never competes with that proof.", "section": "overview" },
-      { "name": "The One Signal Rule", "body": "Violet is an accent, not a wash: keep the dominant visual field graphite and let the violet family identify emphasis or action.", "section": "colors" },
-      { "name": "The Weight Carries the Drama Rule", "body": "Use scale, tight tracking, and weight for authority; do not substitute novelty fonts, italics, or excessive color.", "section": "typography" },
-      { "name": "The Working Margin Rule", "body": "Keep content locked to the shared container; use generous section space and disciplined column gaps instead of loose, isolated floating blocks.", "section": "layout" },
-      { "name": "The Tonal Depth Rule", "body": "Add hierarchy through a darker or raised field and a precise line, never through drop shadows, blur, or decorative glow.", "section": "elevation" },
-      { "name": "The Hard Edge Rule", "body": "Maintain crisp rectangles and hairline division throughout the system; introducing rounded cards or pills changes the archive’s technical character.", "section": "shapes" }
-    ],
-    "dos": ["Do use graphite tonal shifts and 1px rules to establish hierarchy.", "Do keep the hero offer and its primary action in the left field.", "Do reserve the violet family for calls to action, controlled emphasis, and technical metadata.", "Do use Montserrat for compact high-impact headings and Open Sans for readable explanation.", "Do preserve visible keyboard focus and the reduced-motion behavior."],
-    "donts": ["Don't introduce WebGL, neon glows, glassmorphism, or floating shadowed surfaces.", "Don't round controls, cards, or image frames into pills or soft tiles.", "Don't turn every heading, border, or body element violet; the field must remain predominantly graphite.", "Don't center a new hero offer or bury its action below decorative content."]
   }
 }
