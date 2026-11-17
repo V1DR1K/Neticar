@@ -1,20 +1,26 @@
-.cv-page { min-height: 100vh; padding: 30px 24px 70px; background: var(--paper); color: var(--ink); }
+.cv-page { --muted: #5B574D; --line: #D8D0BF; color-scheme: light; min-height: 100vh; padding: 30px 24px 70px; background: var(--paper); color: var(--ink); font-family: var(--body); }
+.cv-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.cv-page a { text-decoration: none; }
+.cv-share-status { font-size: 13px; font-weight: 700; color: var(--muted); }
+.cv-share-button { background: var(--paper-raised); }
+.cv-subtitle { margin: 10px 0 0; font-size: 13px; font-weight: 800; }
+.cv-profile > div { display: grid; gap: 10px; }
 .cv-toolbar { width: min(100%, 920px); margin: 0 auto 20px; display: flex; align-items: center; justify-content: space-between; gap: 18px; font-weight: 700; }
 .cv-toolbar > a { border-bottom: 1px solid currentColor; padding-bottom: 4px; }
-.cv-print-button { min-height: 44px; padding: 10px 16px; background: var(--amber); border: 1px solid var(--ink); color: var(--ink); font: 700 13px var(--font-body), Arial, sans-serif; cursor: pointer; }
+.cv-print-button { min-height: 44px; padding: 10px 16px; background: var(--amber); border: 1px solid var(--ink); color: var(--ink); font: 700 13px var(--body); cursor: pointer; }
 .cv-print-button:focus-visible { outline: 3px solid var(--ink); outline-offset: 4px; box-shadow: 0 0 0 6px var(--amber); }
 .cv-sheet { width: min(100%, 920px); min-height: 1100px; margin-inline: auto; padding: clamp(30px, 6vw, 70px); background: var(--paper-raised); border: 1px solid var(--line); box-shadow: 8px 8px 0 var(--ink); }
 .cv-header { display: flex; justify-content: space-between; align-items: flex-end; gap: 32px; padding-bottom: 26px; border-bottom: 7px solid var(--amber); }
 .cv-eyebrow, .cv-period { margin: 0 0 8px; color: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
-.cv-header h1 { margin: 0; font-family: var(--font-display), Impact, sans-serif; font-size: clamp(54px, 9vw, 90px); line-height: .8; letter-spacing: -.055em; }
+.cv-header h1 { margin: 0; font-family: var(--display); font-size: clamp(54px, 9vw, 90px); line-height: .8; letter-spacing: -.055em; }
 .cv-header-aside { display: grid; gap: 18px; text-align: right; font-size: 16px; font-weight: 700; }
 .cv-signature { padding-top: 12px; border-top: 1px solid var(--line); font-size: 12px; text-transform: uppercase; letter-spacing: .08em; }
 .cv-section { display: grid; grid-template-columns: minmax(135px, .32fr) minmax(0, 1fr); gap: 30px; padding: 24px 0; border-bottom: 1px solid var(--line); }
-.cv-section > h2 { margin: 0; font-family: var(--font-body), Arial, sans-serif; font-size: 12px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.cv-section > h2 { margin: 0; font-family: var(--body); letter-spacing: .12em; font-size: 12px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
 .cv-profile p { margin: 0; max-width: 66ch; color: var(--muted); font-size: 15px; line-height: 1.55; }
 .cv-entries { display: grid; gap: 22px; }
 .cv-entry { display: grid; grid-template-columns: minmax(125px, .35fr) minmax(0, 1fr); gap: 18px; }
-.cv-entry h3 { margin: 0; font-size: 18px; line-height: 1.1; }
+.cv-entry h3 { margin: 0; font-family: var(--body); font-weight: 800; letter-spacing: 0; font-size: 18px; line-height: 1.1; }
 .cv-organization { margin: 5px 0 0; color: var(--muted); font-size: 14px; font-weight: 700; }
 .cv-entry ul { margin: 10px 0 0; padding-left: 17px; color: var(--muted); font-size: 13px; line-height: 1.45; }
 .cv-entry li + li { margin-top: 4px; }
@@ -41,6 +47,7 @@
   html, body { background: #fff !important; }
   .cv-page { min-height: initial; padding: 0; background: #fff; }
   .cv-toolbar { display: none; }
+  .site-header, .skip-link { display: none !important; }
   .cv-sheet { width: 100%; min-height: initial; margin: 0; padding: 0; border: 0; box-shadow: none; background: #fff; }
   .cv-header { padding-bottom: 18px; border-bottom-width: 5px; }
   .cv-header h1 { font-size: 60px; }

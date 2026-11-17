@@ -1,5 +1,0 @@
-import { Reveal } from "./Reveal";
-
-export function Team() {
-  return <section className="section section-raised" id="quien-soy"><div className="container profile-layout"><Reveal className="profile-aside"><p className="cota cota-amber">02 / QUIÉN SOY</p><p className="profile-aside-title">Una persona.<br />Una firma.<br />Un recorrido.</p><span className="profile-aside-signature">Neticar</span></Reveal><Reveal className="profile-copy" delay={120}><p className="cota cota-amber">Tomás Colombo · Rosario</p><h2 className="headline">Neticar es mi firma personal.</h2><p className="lede">Soy desarrollador Full Stack. Mi camino empezó en la especialidad de Informática del Instituto Politécnico Superior de Rosario y siguió entre formación, trabajo en equipo y proyectos propios.</p><p className="lede">Hoy trabajo a jornada completa en CISB mientras curso el último año de la Tecnicatura en Inteligencia Artificial. Esta página reúne ese recorrido y las soluciones en las que participo o que desarrollo por mi cuenta.</p><a className="text-link" href="#recorrido">Seguir mi recorrido<span aria-hidden="true">↓</span></a></Reveal></div></section>;
-}

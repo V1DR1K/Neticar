@@ -1,11 +1,16 @@
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
+import { MotionEffects } from "@/components/MotionEffects";
 import { Navigation } from "@/components/Navigation";
-import { Projects } from "@/components/Projects";
-import { Team } from "@/components/Team";
 import { Trajectory } from "@/components/Trajectory";
+import { Work } from "@/components/Work";
 
 export default function Home() {
-  return <><Navigation /><main id="contenido"><Hero /><Team /><Trajectory /><Projects /><Contact /></main><Footer /></>;
+  return <>
+    <Navigation />
+    <main id="contenido"><Hero /><Trajectory /><Work /><Contact /></main>
+    <Footer />
+    <MotionEffects />
+  </>;
 }

@@ -1,16 +1,40 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useSyncExternalStore } from "react";
 
-const links = [{ href: "#quien-soy", label: "Quién soy" }, { href: "#recorrido", label: "Recorrido" }, { href: "#proyectos", label: "Proyectos" }, { href: "/cv", label: "CV" }];
+type Theme = "light" | "dark";
+const links = [{ href: "#recorrido", label: "Recorrido" }, { href: "#trabajo", label: "Trabajo" }, { href: "/cv", label: "CV" }, { href: "#contacto", label: "Contacto" }];
+
+function currentTheme(): Theme {
+  const set = document.documentElement.dataset.theme;
+  if (set === "light" || set === "dark") return set;
+  return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+}
+
+function subscribe(onChange: () => void) {
+  const scheme = window.matchMedia("(prefers-color-scheme: dark)");
+  scheme.addEventListener("change", onChange);
+  window.addEventListener("themechange", onChange);
+  return () => { scheme.removeEventListener("change", onChange); window.removeEventListener("themechange", onChange); };
+}
 
 export function Navigation() {
-  const [open, setOpen] = useState(false);
-  const buttonRef = useRef<HTMLButtonElement>(null);
-  const firstLinkRef = useRef<HTMLAnchorElement>(null);
-  useEffect(() => {
-    if (open) firstLinkRef.current?.focus();
-  }, [open]);
-  const closeMenu = () => { setOpen(false); buttonRef.current?.focus(); };
-  return <header className="site-header"><nav className="nav-shell" aria-label="Navegación principal"><a className="brand" href="#inicio" aria-label="Tomás Colombo, volver al inicio"><span className="brand-monogram" aria-hidden="true">TC</span><span className="brand-text"><strong>Tomás Colombo</strong><small>Neticar · firma personal</small></span></a><div className="desktop-nav">{links.map((link) => <a key={link.href} href={link.href}>{link.label}</a>)}<a href="#contacto">Contacto</a></div><a className="button button-primary nav-cta" href="#contacto">Hablemos</a><button ref={buttonRef} className="menu-toggle" type="button" aria-expanded={open} aria-controls="mobile-menu" aria-label={open ? "Cerrar menú" : "Abrir menú"} onClick={() => setOpen((value) => !value)}><span /><span /><span /></button><div id="mobile-menu" className={`mobile-menu ${open ? "is-open" : ""}`} onKeyDown={(event) => { if (event.key === "Escape") closeMenu(); }}>{links.map((link, index) => <a ref={index === 0 ? firstLinkRef : undefined} key={link.href} href={link.href} onClick={() => setOpen(false)}>{link.label}</a>)}<a href="#contacto" onClick={() => setOpen(false)}>Contacto</a><a className="button button-primary" href="#contacto" onClick={() => setOpen(false)}>Hablemos</a></div></nav></header>;
+  const theme = useSyncExternalStore(subscribe, currentTheme, () => null);
+
+  const toggle = () => {
+    const next: Theme = currentTheme() === "dark" ? "light" : "dark";
+    document.documentElement.dataset.theme = next;
+    try { localStorage.setItem("neticar-theme", next); } catch { /* sin almacenamiento: el cambio dura esta visita */ }
+    window.dispatchEvent(new Event("themechange"));
+  };
+
+  return <header className="site-header"><div className="wrap hdr">
+    <a className="brand" href="#inicio" aria-label="Tomás Colombo, volver al inicio"><span className="mono" aria-hidden="true">TC</span><span><b>Tomás Colombo</b><small>Neticar · firma personal</small></span></a>
+    <div className="hdr-right">
+      <nav className="site-nav" aria-label="Secciones"><ul>{links.map((link) => <li key={link.href}><a href={link.href}>{link.label}</a></li>)}</ul></nav>
+      <button className="theme" type="button" onClick={toggle} aria-pressed={theme === "dark"} aria-label="Modo oscuro">
+        <span className="knob" aria-hidden="true">◐</span><span aria-hidden="true">{theme === "dark" ? "Claro" : "Oscuro"}</span>
+      </button>
+    </div>
+  </div></header>;
 }

@@ -59,7 +59,9 @@ Estas son las familias que usa el sitio publicado. No usar la fuente display en 
 ### Recursos de interfaz publicados
 
 - Los rótulos breves en mayúsculas ayudan a ubicar secciones.
-- El perfil usa una barra ocre lateral de 6px.
+- La web tiene modo claro (marfil, tinta y ámbar) y modo oscuro (tinta cálida `#0F0E0C`, texto marfil y ámbar `#E8B43A`), con los mismos roles de color.
+- La portada tiene un campo de conceptos animado que nunca pasa debajo del texto o la foto.
+- Las portadas de producto conservan el logo, el lema, los colores y la tipografía de cada marca, con una captura actual de su landing.
 - Las tarjetas destacadas usan una sombra negra desplazada de 5px, que pasa a ocre al interactuar.
 - El monograma TC del encabezado se presenta sin subrayado; la variante del favicon conserva el subrayado ocre.
 
