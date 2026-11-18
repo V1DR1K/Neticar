@@ -12,7 +12,7 @@
 .cv-sheet { width: min(100%, 920px); min-height: 1100px; margin-inline: auto; padding: clamp(30px, 6vw, 70px); background: var(--paper-raised); border: 1px solid var(--line); box-shadow: 8px 8px 0 var(--ink); }
 .cv-header { display: flex; justify-content: space-between; align-items: flex-end; gap: 32px; padding-bottom: 26px; border-bottom: 7px solid var(--amber); }
 .cv-eyebrow, .cv-period { margin: 0 0 8px; color: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
-.cv-header h1 { margin: 0; font-family: var(--display); font-size: clamp(54px, 9vw, 90px); line-height: .8; letter-spacing: -.055em; }
+.cv-header h1 { margin: 0; font-family: var(--display); font-size: clamp(30px, 4.2vw, 44px); line-height: 1; letter-spacing: -.02em; white-space: nowrap; }
 .cv-header-aside { display: grid; gap: 18px; text-align: right; font-size: 16px; font-weight: 700; }
 .cv-signature { padding-top: 12px; border-top: 1px solid var(--line); font-size: 12px; text-transform: uppercase; letter-spacing: .08em; }
 .cv-section { display: grid; grid-template-columns: minmax(135px, .32fr) minmax(0, 1fr); gap: 30px; padding: 24px 0; border-bottom: 1px solid var(--line); }
@@ -60,4 +60,45 @@
   .cv-page a { color: #000; }
   .cv-section { grid-template-columns: minmax(135px, .32fr) minmax(0, 1fr); gap: 22px; }
   .cv-entry { grid-template-columns: minmax(125px, .35fr) minmax(0, 1fr); gap: 12px; }
+}
+
+/* Móvil: barra de acciones en columna y botones a todo el ancho */
+@media (max-width: 640px) {
+  .cv-toolbar { flex-direction: column; align-items: stretch; gap: 12px; margin-bottom: 14px; }
+  .cv-toolbar > a { align-self: flex-start; }
+  .cv-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .cv-print-button, .cv-share-button { width: 100%; font-size: 12px; padding: 10px 8px; }
+  .cv-share-status { grid-column: 1 / -1; }
+  .cv-header h1 { font-size: 40px; }
+  .cv-section { padding: 18px 0; }
+}
+
+/* Impresión: una sola hoja A4 */
+@page { size: A4 portrait; margin: 10mm; }
+@media print {
+  html, body { background: #fff !important; }
+  .cv-page { padding: 0 !important; min-height: 0 !important; background: #fff !important; }
+  .cv-sheet { width: 100% !important; min-height: 0 !important; box-shadow: none !important; border: 0 !important; margin: 0 !important; padding: 0 !important; background: #fff !important; }
+  .cv-header { border-bottom-width: 4px !important; padding-bottom: 8px !important; }
+  .cv-eyebrow, .cv-period { font-size: 8.5px !important; margin: 0 0 3px !important; }
+  .cv-header h1 { font-size: 34px !important; line-height: .95 !important; }
+  .cv-header-aside { font-size: 10px !important; gap: 6px !important; }
+  .cv-signature { font-size: 8px !important; padding-top: 6px !important; }
+  .cv-section { grid-template-columns: 84px minmax(0, 1fr) !important; gap: 10px !important; padding: 7px 0 !important; break-inside: avoid; }
+  .cv-section > h2 { font-size: 9px !important; }
+  .cv-profile p { font-size: 10.5px !important; line-height: 1.4 !important; }
+  .cv-entries { gap: 6px !important; }
+  .cv-entry { grid-template-columns: 105px minmax(0, 1fr) !important; gap: 8px !important; }
+  .cv-entry h3 { font-size: 12px !important; }
+  .cv-organization { font-size: 10.5px !important; margin-top: 1px !important; }
+  .cv-subtitle { font-size: 8.5px !important; margin: 2px 0 0 !important; }
+  .cv-entry ul { font-size: 9.5px !important; line-height: 1.35 !important; margin-top: 3px !important; padding-left: 12px !important; }
+  .cv-entry li + li { margin-top: 1px !important; }
+  .cv-skills { gap: 4px !important; }
+  .cv-skills li { font-size: 9px !important; padding: 2px 5px !important; }
+  .cv-projects { gap: 3px !important; }
+  .cv-projects li { font-size: 10px !important; gap: 8px !important; }
+  .cv-footer { font-size: 9px !important; padding-top: 6px !important; }
+  .site-header, .skip-link, .cv-toolbar { display: none !important; }
+  .cv-page a { color: #000 !important; }
 }

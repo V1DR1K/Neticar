@@ -48,7 +48,7 @@ export default function CvPage() {
     <div className="cv-toolbar"><Link href="/">← Volver al portfolio</Link><div className="cv-actions"><ShareButton /><PrintButton /></div></div>
     <article className="cv-sheet">
       <header className="cv-header">
-        <div><p className="cv-eyebrow">Currículum · Rosario, Argentina</p><h1>Tomás<br />Colombo.</h1></div>
+        <div><p className="cv-eyebrow">Currículum · Rosario, Argentina</p><h1>Tomás Colombo.</h1></div>
         <div className="cv-header-aside"><span>Desarrollador<br />Full Stack</span><span className="cv-signature">Neticar · firma personal</span></div>
       </header>
       <section className="cv-section cv-profile" aria-labelledby="cv-profile-heading">

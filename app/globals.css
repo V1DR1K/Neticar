@@ -136,8 +136,8 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 /* recorrido */
 #recorrido { padding-block: clamp(56px, 7vw, 96px); }
 .about { display: grid; gap: 14px; margin: -4px 0 clamp(36px, 4.5vw, 56px); }
-.about p { margin: 0; font: 400 clamp(18px, 1.65vw, 22px)/1.4 var(--display); letter-spacing: -.01em; color: var(--on-block); max-width: none; }
-.about p + p { color: var(--on-block-muted); }
+.about p { margin: 0; font: 300 clamp(16px, 1.4vw, 19px)/1.45 var(--display); letter-spacing: -.01em; color: var(--on-block-muted); max-width: none; }
+.about p + p { color: var(--on-block-muted); opacity: .8; }
 .traits { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); list-style: none; margin: 8px 0 0; padding: 0; border-top: 1px solid var(--line-on-block); border-bottom: 1px solid var(--line-on-block); }
 .traits li { display: grid; gap: 3px; padding: 14px 16px; transition: background .25s; }
 .traits li + li { border-left: 1px solid var(--line-on-block); }
